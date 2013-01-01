@@ -432,6 +432,23 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * WebSockets
 * Server
 
+### [Java-WebSocket](http://java-websocket.org/)
+
+> This repository contains a barebones WebSocket server and client implementation written in 100% Java. The underlying classes are implemented using the Java ServerSocketChannel and SocketChannel classes, which allows for a non-blocking event-driven model (similar to the WebSocket API for web browsers).
+
+* Java
+* WebSockets
+* Server
+* Client
+
+### [Autobahn WebSocket](http://autobahn.ws/)
+
+> Autobahn provides Open-Source client and server implementations of WebSocket and WAMP.
+
+* WebSockets
+* Java
+* Android
+
 <a name="websocket-client-libraries"></a>
 ## WebSocket Client Libraries
 
@@ -455,16 +472,20 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 ### Java
 
 * [Java WebSocket Client](http://code.google.com/p/weberknecht/)
+* [UnittWebSocket](http://code.google.com/p/unitt/wiki/UnittWebSocket)
+* [Java-WebSocket](http://java-websocket.org/)
 
 ### C++
 * [Arduino C++ WebSocket client](https://github.com/krohling/ArduinoWebsocketClient)
 
 ### Ruby
-* [ruby-web-socket](https://github.com/gimite/web-socket-ruby)
+* [ruby language="-web-socket"][/ruby](https://github.com/gimite/web-socket-ruby)
+* [em-websocket-client](https://github.com/mwylde/em-websocket-client)
 
 ### Python
 
 * [ws4py](https://github.com/Lawouach/WebSocket-for-Python/tree/master/ws4py/client)
+* [websocket-client](http://pypi.python.org/pypi/websocket-client/)
 
 ### Objective-C
 
