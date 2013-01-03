@@ -88,7 +88,7 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 #### [OpenPush](http://openpush.im)
 
 
-#### [spire.io](http://spire.io)
+#### [spire.io](http://spire.io) - **Down. Status unknown**
 
 > Build serverless applications with our secure, scalable web APIs for web and mobile development.
 
