@@ -111,9 +111,18 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
 
+#### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
+
+> Add Realtime collaboration to your app
+Give your users the power of Google Docs–style collaboration.
+All JavaScript. No server. No sweat.
+
 #### [Firebase](http://firebase.com)
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
+
+* WebSockets
+* BaaS
 
 #### [Meteor](http://meteor.com)
 
@@ -410,7 +419,7 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * Server
 * Client
 
-### https://github.com/MiCHiLU/erlang_websocket
+### [erlang_websocket](https://github.com/MiCHiLU/erlang_websocket)
 
 * Erlang
 * WebSockets
@@ -449,6 +458,22 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * Java
 * Android
 
+### [libwebsockets](http://git.warmcat.com/cgi-bin/cgit/libwebsockets/)
+
+> C Websockets Server Library
+
+* C
+* WebSockets
+* Server
+
+### [ArduinoWebsocketServer](https://github.com/ejeklint/ArduinoWebsocketServer)
+
+> This library implements a Websocket server running on an Arduino
+
+* WebSockets
+* Server
+* Arduino
+
 <a name="websocket-client-libraries"></a>
 ## WebSocket Client Libraries
 
@@ -479,7 +504,7 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * [Arduino C++ WebSocket client](https://github.com/krohling/ArduinoWebsocketClient)
 
 ### Ruby
-* [ruby language="-web-socket"][/ruby](https://github.com/gimite/web-socket-ruby)
+* [web-socket-ruby"](https://github.com/gimite/web-socket-ruby)
 * [em-websocket-client](https://github.com/mwylde/em-websocket-client)
 
 ### Python
