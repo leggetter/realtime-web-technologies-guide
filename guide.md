@@ -83,7 +83,34 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 
 #### [Realtime.co](http://realtime.co)
 
-> Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few miliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
+> Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and applications (mobile, desktop, server, etc.) that require constant content updates in just a few miliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
+
+* Websockets
+* Fallback-support
+* Real-Time Client Push
+* Real-Time messaging
+* Real-Time data
+* .NET
+* Java / Android
+* JavaScript
+* Lua
+* iOS
+* Windows Phone
+* node.js
+* Objective-C
+* PHP
+* Python
+* SQL Server
+* Ruby
+* Silverlight
+* ActionScript
+* REST API
+* PubSub
+* Presence
+* Cloud hosted
+* built-in security (authentication and authorization)
+* multiplexing (through the use of channels)
+* HTML5
 
 #### [OpenPush](http://openpush.im)
 
