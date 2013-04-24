@@ -486,8 +486,9 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * [AS3 WebSocket](https://github.com/Worlize/AS3WebSocket)
 
 ### .NET
-* [.NET WebSocket client](http://html5labs.interoperabilitybridges.com/prototypes/websockets/websockets/info) - prototype
+* [Microsoft .NET 4.5 namespace and classes](http://msdn.microsoft.com/en-us/library/hh159285.aspx)
 * [Anaida - WebSocket Client/Adapter](http://anaida.codeplex.com/)
+* [Microsoft Windows Store app MessageWebSocket class](http://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.sockets.messagewebsocket.aspx)
 * [WebSocket Sharp](https://github.com/sta/websocket-sharp)
 * [WebSocket4Net](http://websocket4net.codeplex.com/) - originated from the SuperWebSocket codebase
 
