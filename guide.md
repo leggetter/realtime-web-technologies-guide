@@ -161,6 +161,29 @@ All JavaScript. No server. No sweat.
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Services
 
+### [Spike-Engine] (http://www.spike-engine.com)
+
+> Spike-Engine allows quick and painless creation of real-time web services in .NET. Spike-Engine focuses on latency, bandwith and perfomance and has been designed and proven to be robust and reliable. The technology has been tested in production environment with thousands of simultaneous connections and used to build reliable game and application servers.
+
+* RPC
+* Automatic Client Stub Generation
+* WebSockets
+* Fallback Support
+* Cross-Domain Support
+* Comet
+* Long-Polling
+* PubSub
+* HTTP
+* .NET
+* Flash
+* FlashSockets
+* SPML / SECP
+* HTTP Tunneling
+* Security
+* Cross-Platform
+* Monitoring
+
+
 ### [SignalR](https://github.com/SignalR/SignalR)
 
 * WebSockets
