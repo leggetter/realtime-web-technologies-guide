@@ -4,7 +4,7 @@
 <a name="hosted-client"></a>
 ### Messaging: with focus on delivery to clients (e.g. Web Browsers)
 
-#### [Pusher](http://pusher.com) - **Who I work for**
+#### [Pusher](http://pusher.com)
 
 > Pusher is a hosted API for quickly, easily and securely adding scalable realtime functionality to web and mobile apps.
 
