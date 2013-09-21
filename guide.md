@@ -246,11 +246,11 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * EventSource
 * Ruby
 
-### [nowjs](http://nowjs.org/)
+### [nowjs](https://github.com/Flotype/now)
 
 * node.js
 
-*(uses Socket.io*
+*Doesn't appear to be actively maintained any more and the website is down.*
 
 ### [SuperWebSocket, a .NET WebSocket server](http://superwebsocket.codeplex.com/)
 
