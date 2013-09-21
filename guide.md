@@ -85,7 +85,7 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 
 > Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few miliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
 
-#### [OpenPush](http://openpush.im)
+#### [OpenPush](http://openpush.im) - **No activity since 2011**
 
 
 #### [spire.io](http://spire.io) - **Down. Status unknown**
