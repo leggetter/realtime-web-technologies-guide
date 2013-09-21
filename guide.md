@@ -161,6 +161,15 @@ All JavaScript. No server. No sweat.
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Services
 
+### [Prosody](http://prosody.im/)
+
+> Prosody is a modern flexible communications server for Jabber/XMPP written in Lua. It aims to be easy to set up and configure, and light on resources. For developers it aims to be easy to extend and give a flexible system on which to rapidly develop added functionality, or prototype new protocols.
+
+* Jabber
+* XMPP
+* Lua
+* BOSH
+
 ### [Centrifuge](https://github.com/FZambia/centrifuge)
 
 > Simple platform for real-time message broadcasting in web applications.
