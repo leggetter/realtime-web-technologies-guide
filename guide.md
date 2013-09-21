@@ -407,7 +407,7 @@ Represents a core building block of many other realtime web servers.
 * HTTP Streaming
 * Erlang
 
-### [juggernaut](https://github.com/maccman/juggernaut)
+### [juggernaut](https://github.com/maccman/juggernaut) *[deprecated](http://blog.alexmaccaw.com/killing-a-library)*
 
 * WebSockets
 * Comet
