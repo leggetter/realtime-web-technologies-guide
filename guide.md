@@ -432,11 +432,6 @@ Represents a core building block of many other realtime web servers.
 * Java
 * WebSockets
 
-### [WaterSpout Server](http://www.spoutserver.com/)
-
-* Java
-* WebSockets
-
 ### [Goliath](http://goliath.io)
 
 * Ruby
