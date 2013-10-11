@@ -81,9 +81,39 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 * REST API
 * PubSub
 
-#### [Realtime.co](http://realtime.co)
+#### [Realtime.co](http://framework.realtime.co)
 
-> Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few miliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
+> Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
+
+* Websockets
+* Fallback-support (streaming and polling)
+* Real-Time Client Push
+* Real-Time messaging
+* Real-Time data
+* .NET
+* Java / Android
+* JavaScript
+* Lua
+* iOS
+* Titanium Appcelerator
+* Windows Phone
+* node.js
+* Objective-C
+* PHP
+* Python
+* C/C++
+* SQL Server
+* Ruby
+* Silverlight
+* ActionScript
+* REST API
+* Pub/Sub
+* Presence
+* Cloud hosted
+* built-in security (authentication and authorization)
+* multiplexing (through the use of channels)
+* HTML5
+* HTML5 real-time enabled templating engine (xRTML)
 
 #### [OpenPush](http://openpush.im) - **No activity since 2011**
 
@@ -135,6 +165,21 @@ All JavaScript. No server. No sweat.
 * WebSockets
 
 *Not to be confused with the original Meteor Comet server*
+
+#### [Realtime.co Cloud Storage](http://framework.realtime.co/storage)
+
+> The Realtime.co Cloud Storage is a highly-scalable backend-as-a-service based on Amazon DynamoDB. Built-in real-time notifications keep data synchronized between users (web and mobile).
+
+* BaaS
+* JavaScript
+* iOS
+* Android (Java)
+* Node.js
+* NoSQL
+* DynamoDB
+* HTTP Streaming
+* HTTP Long-polling
+* WebSockets
 
 
 #### [simperium](https://simperium.com/)
