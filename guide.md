@@ -9,6 +9,7 @@
 > Pusher is a hosted API for quickly, easily and securely adding scalable realtime functionality to web and mobile apps.
 
 * WebSockets
+* HTTP fallback
 * Flash socket fallback
 * Real-Time Client Push
 * Real-Time messaging
@@ -102,17 +103,14 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 * PHP
 * Python
 * C/C++
-* SQL Server
 * Ruby
 * Silverlight
 * ActionScript
 * REST API
 * Pub/Sub
 * Presence
-* Cloud hosted
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
-* HTML5
 * HTML5 real-time enabled templating engine (xRTML)
 
 #### [OpenPush](http://openpush.im) - **No activity since 2011**
@@ -151,8 +149,11 @@ All JavaScript. No server. No sweat.
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
 
+* iOS
+* Java / Android
+* JavaScript
 * WebSockets
-* BaaS
+* BaaS (Backend as a Service)
 
 #### [Meteor](http://meteor.com)
 
