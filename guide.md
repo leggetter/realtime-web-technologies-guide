@@ -2,9 +2,117 @@
 ## Hosted Realtime Services
 
 <a name="hosted-client"></a>
-### PubSub Messaging
+### General Messaging & PubSub
+
+#### [Hydna](https://www.hydna.com/)
+
+* [Docs](https://www.hydna.com/documentation/)
+* [Pricing](https://www.hydna.com/plans-and-pricing/)
+
+> A hosted platform that takes the pain out of building real-time-enabled websites and applications
+
+* binary
+* WebSockets
+* Comet
+* Flash
+* HTTP
+* routing
+* authentication
+* room partitioning
+
+##### Subscribe
+
+###### JavaScript (client)
+
+    var channel = new HydnaChannel('public.hydna.net/1886401376', 'rw');
+    
+    channel.onmessage = function(event) {
+      // handle update
+    };
+    
+##### Publish
+
+###### curl command
+
+    curl --data "Hello from curl" http://public.hydna.net/1886401376
+
+#### [PubNub](http://pubnub.com)
+
+* [Libraries](http://www.pubnub.com/developers)
+* [Pricing](http://www.pubnub.com/pricing)
+
+> Pubnub is the fastest cloud-hosted realtime messaging system for web and mobile apps.
+
+* BOSH
+* Fallback-support
+* Real-Time Client Push
+* Real-Time messaging
+* Real-Time data
+* Coldfusion
+* .NET
+* Erlang
+* Google App Engine (GAE)
+* Java
+* JavaScript
+* Lua-Corona
+* node.js
+* Objective-C
+* Perl
+* PHP
+* Python
+* Ruby
+* Silverlight
+* Titanium
+* REST API
+* PubSub
+
+##### Subscribe
+
+###### JavaScript (client)
+
+    var pubnub = PUBNUB.init({
+      subscribe_key: 'demo'
+    });
+    
+    pubnub.subscribe({
+      channel: 'my_channel',
+      message: function( msg )  {
+        // handle update
+      }
+    });
+    
+##### Publish
+
+###### JavaScript (client)
+
+    var pubnub = PUBNUB.init({
+      publish_key: 'demo'
+    });
+
+    pubnub.publish( {
+      channel: 'my_channel',        
+      message: 'hello!'
+    } );
+
+###### PHP
+
+    $pubnub = new Pubnub(
+      "demo",  ## PUBLISH_KEY
+      "demo",  ## SUBSCRIBE_KEY
+      "",      ## SECRET_KEY
+      false    ## SSL_ON?
+    );
+    
+    $info = $pubnub->publish( array(
+      'channel' => 'hello_world',
+      'message' => 'Hey World!'
+    ) );    
 
 #### [Pusher](http://pusher.com)
+
+* [Docs](http://pusher.com/docs)
+* [Libraries](http://pusher.com/docs/libraries)
+* [Pricing](http://pusher.com/pricing)
 
 > Pusher is a hosted API for quickly, easily and securely adding scalable realtime functionality to web and mobile apps.
 
@@ -35,62 +143,32 @@
 * Presence
 * PubSub
 
-```
-var pusher = new Pusher( 'APP_KEY', options );
-var channel = pusher.subscribe( 'my-channel' );
-channel.bind( 'my-event', function( eventData ) {
-  // handle event
-} );
-```
+##### Subscribe
 
-#### [Hydna](https://www.hydna.com/)
+###### JavaScript (client)
 
-A hosted platform that takes the pain out of building real-time-enabled websites and applications
+    var pusher = new Pusher( 'APP_KEY', options );
+    var channel = pusher.subscribe( 'my-channel' );
+    channel.bind( 'my-event', function( eventData ) {
+      // handle event
+    } );
 
-* binary
-* WebSockets
-* Comet
-* Flash
-* HTTP
-* routing
-* authentication
-* room partitioning
+##### Publish
 
-#### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
+###### Node.js
 
-* Comet
-* Real-Time Client Push
-* Real-Time messaging
-* Real-Time data
+    var pusher = new Pusher( { appId: 'APP_ID', key: 'APP_KEY', secret: 'APP_KEY' } );
+    pusher.trigger( 'my-channel', 'my-event', { "some": "data" } );
+    
+###### PHP
 
-#### [PubNub](http://pubnub.com)
-
-> Pubnub is the fastest cloud-hosted realtime messaging system for web and mobile apps.
-
-* BOSH
-* Fallback-support
-* Real-Time Client Push
-* Real-Time messaging
-* Real-Time data
-* Coldfusion
-* .NET
-* Erlang
-* Google App Engine (GAE)
-* Java
-* JavaScript
-* Lua-Corona
-* node.js
-* Objective-C
-* Perl
-* PHP
-* Python
-* Ruby
-* Silverlight
-* Titanium
-* REST API
-* PubSub
+    $pusher = new Pusher( 'APP_KEY', 'APP_SECRET', 'APP_ID' );
+    $pusher->trigger( 'my-channel', 'my_event', array( 'some' => 'data' );
 
 #### [Realtime.co](http://framework.realtime.co)
+
+* [Docs](http://www.realtime.co/developers)
+* [Pricing](http://app.realtime.co/pricing)
 
 > Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
 
@@ -121,6 +199,13 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
 
+#### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
+
+* Comet
+* Real-Time Client Push
+* Real-Time messaging
+* Real-Time data
+
 #### [OpenPush](http://openpush.im) - **No activity since 2011**
 
 
@@ -147,12 +232,6 @@ A hosted platform that takes the pain out of building real-time-enabled websites
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
 
-#### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
-
-> Add Realtime collaboration to your app
-Give your users the power of Google Docs–style collaboration.
-All JavaScript. No server. No sweat.
-
 #### [Firebase](http://firebase.com)
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
@@ -162,6 +241,12 @@ All JavaScript. No server. No sweat.
 * JavaScript
 * WebSockets
 * BaaS (Backend as a Service)
+
+#### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
+
+> Add Realtime collaboration to your app
+Give your users the power of Google Docs–style collaboration.
+All JavaScript. No server. No sweat.
 
 #### [Meteor](http://meteor.com)
 
@@ -266,7 +351,7 @@ All JavaScript. No server. No sweat.
 * ASP.NET
 * IIS
 * PubSub
-* RPC
+* RMI
 
 ### [Alchemy Websockets](http://alchemywebsockets.net/)
 
