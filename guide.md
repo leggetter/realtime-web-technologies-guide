@@ -2,7 +2,7 @@
 ## Hosted Realtime Services
 
 <a name="hosted-client"></a>
-### Messaging: with focus on delivery to clients (e.g. Web Browsers)
+### PubSub Messaging
 
 #### [Pusher](http://pusher.com)
 
@@ -34,6 +34,14 @@
 * REST API
 * Presence
 * PubSub
+
+```
+var pusher = new Pusher( 'APP_KEY', options );
+var channel = pusher.subscribe( 'my-channel' );
+channel.bind( 'my-event', function( eventData ) {
+  // handle event
+} );
+```
 
 #### [Hydna](https://www.hydna.com/)
 
