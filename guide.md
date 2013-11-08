@@ -62,7 +62,7 @@
 * Python
 * Ruby
 * Silverlight
-* Titanium
+* Titaniumf
 * REST API
 * PubSub
 
@@ -241,6 +241,24 @@
 * JavaScript
 * WebSockets
 * BaaS (Backend as a Service)
+
+##### JavaScript (client)
+
+    var dataRef = new Firebase( 'https://my-app.firebaseio.com/' );
+
+    dataRef.push( { name: '@leggetter', text: 'Yo from FOWA!' } );
+
+    dataRef.on( 'child_added', function(snapshot) {
+      // Add the data
+    } );
+
+    dataRef.on( 'child_changed', function(snapshot) {
+      // Update the data
+    } );
+
+    dataRef.on( 'child_removed', function(snapshot) {
+      // Remove the data
+    } );
 
 #### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
 
