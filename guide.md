@@ -167,10 +167,10 @@
 
 #### [Realtime.co](http://framework.realtime.co)
 
-* [Docs](http://www.realtime.co/developers)
-* [Pricing](http://app.realtime.co/pricing)
+* [Docs](http://framework.realtime.co/messaging/#documentation)
+* [Pricing](http://framework.realtime.co/messaging/#pricing)
 
-> Realtime Web is a set of tools, based on a cloud-hosted messaging system, for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
+> The Realtime Messaging Framework is a cloud-hosted messaging system for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
 
 * Websockets
 * Fallback-support (streaming and polling)
@@ -198,6 +198,41 @@
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
+
+##### Subscribe
+
+###### JavaScript (client)
+
+	var RealtimeClient = RealtimeFactory.createClient();
+	RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
+	
+	RealtimeClient.onConnected = function (theClient) {               
+    	theClient.subscribe('my-channel', true,
+        	function (theClient, channel, msg) {
+          		console.log("Received message:", msg);
+        	});                                
+    };    
+
+##### Publish
+
+###### JavaScript (client)
+
+	var RealtimeClient = RealtimeFactory.createClient();
+    RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
+	
+	RealtimeClient.onConnected = function (theClient) {               
+    	theClient.send('my-channel', 'Hello World');                                
+    };
+    
+###### PHP
+
+    $URL = 'http://ortc-developers.realtime.co/server/2.1';
+	$AK = '[YOUR_APPLICATION_KEY]';
+	$PK = '[YOUR_APPLICATION_PRIVATE_KEY]';
+	$TK = '[USER_TOKEN]'; // not necessary if private key is used
+
+	$rt = new Realtime( $URL, $AK, $PK, $TK );
+	$result = $rt->send("my-channel", "Hello World", $response);
 
 #### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
 
@@ -280,9 +315,13 @@ All JavaScript. No server. No sweat.
 
 #### [Realtime.co Cloud Storage](http://framework.realtime.co/storage)
 
+* [Docs](http://framework.realtime.co/storage/#documentation)
+* [Pricing](http://framework.realtime.co/storage/#pricing)
+
 > The Realtime.co Cloud Storage is a highly-scalable backend-as-a-service based on Amazon DynamoDB. Built-in real-time notifications keep data synchronized between users (web and mobile).
 
 * BaaS
+* Real-time data sync
 * JavaScript
 * iOS
 * Android (Java)
@@ -292,6 +331,39 @@ All JavaScript. No server. No sweat.
 * HTTP Streaming
 * HTTP Long-polling
 * WebSockets
+
+##### JavaScript (client)
+
+	var credentials = {
+        applicationKey: "[YOUR_APPLICATION_KEY]",
+        authenticationToken: "[USER_TOKEN]"
+    }
+
+    var storageRef = Realtime.Storage.create(credentials);
+	var tableRef = storageRef.table("chat-messages");
+
+	var chat-msg = {
+    	chatid : "My chat room",
+    	timestamp : +new Date(),
+    	text : "Hello World",
+    	nickname : "Beavis"
+    };
+       
+    tableRef.push(chat-msg, function() {
+    	// item successfully committed to database    
+    });
+
+ 	tableRef.on("put", function(item) {
+        // item was added to the database table
+    });
+
+	tableRef.on("update", function(item) {
+        // item was updated at the database table
+    });
+
+	tableRef.on("delete", function(item) {
+        // item was removed from the database table
+    });
 
 
 #### [simperium](https://simperium.com/)
