@@ -316,7 +316,8 @@ All JavaScript. No server. No sweat.
 
 #### [Realtime.co Cloud Storage](http://framework.realtime.co/storage)
 
-* [Docs](http://framework.realtime.co/storage/#documentation)
+* [Docs](http://storage-public.realtime.co/documentation/starting-guide/1.0.0/overview.html)
+* [Libraries](http://framework.realtime.co/storage/#documentation)
 * [Pricing](http://framework.realtime.co/storage/#pricing)
 
 > The Realtime.co Cloud Storage is a highly-scalable backend-as-a-service based on Amazon DynamoDB. Built-in real-time notifications keep data synchronized between users (web and mobile).
