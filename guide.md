@@ -167,7 +167,8 @@
 
 #### [Realtime.co](http://framework.realtime.co)
 
-* [Docs](http://framework.realtime.co/messaging/#documentation)
+* [Docs](http://messaging-public.realtime.co/documentation/starting-guide/overview.html)
+* [Libraries](http://framework.realtime.co/messaging/#documentation)
 * [Pricing](http://framework.realtime.co/messaging/#pricing)
 
 > The Realtime Messaging Framework is a cloud-hosted messaging system for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
