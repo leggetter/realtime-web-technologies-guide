@@ -499,6 +499,14 @@ All JavaScript. No server. No sweat.
 * PubSub
 * RMI
 
+### [Mojolicious](http://mojolicio.us/)
+
+> A modern Perl web framework built from the ground-up as a nonblocking web server, including built-in support for web sockets.
+
+* Full nonblocking web server
+* WebSockets
+* Perl
+
 ### [Alchemy Websockets](http://alchemywebsockets.net/)
 
 > An extremely efficient C# WebSocket server for .NET projects.
