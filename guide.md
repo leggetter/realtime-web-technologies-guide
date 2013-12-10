@@ -232,6 +232,7 @@ The following example describes how authentication can be added to a channel.
 * Real-Time Client Push
 * Real-Time messaging
 * Real-Time data
+* Mobile Push Notifications for iOS and Android (APNS and GCM)
 * .NET
 * Java / Android
 * JavaScript
@@ -376,7 +377,7 @@ All JavaScript. No server. No sweat.
 
 > The Realtime.co Cloud Storage is a highly-scalable backend-as-a-service based on Amazon DynamoDB. Built-in real-time notifications keep data synchronized between users (web and mobile).
 
-* BaaS
+* BaaS (Backend-as-a-Service)
 * Real-time data sync
 * JavaScript
 * iOS
@@ -387,6 +388,7 @@ All JavaScript. No server. No sweat.
 * HTTP Streaming
 * HTTP Long-polling
 * WebSockets
+* Mobile Push Notifications for iOS and Android (APNS and GCM)
 
 ##### JavaScript (client)
 
