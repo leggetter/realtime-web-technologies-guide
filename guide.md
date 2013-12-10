@@ -9,22 +9,35 @@
 * [Docs](https://www.hydna.com/documentation/)
 * [Pricing](https://www.hydna.com/plans-and-pricing/)
 
-> A hosted platform that takes the pain out of building real-time-enabled websites and applications
+> Hydna is a hosted backend into which you can send data and have it instantly appear on other devices.
 
-* binary
+* Real-Time messaging
+* Binary
 * WebSockets
 * Comet
 * Flash
-* HTTP
-* routing
-* authentication
-* room partitioning
+* HTTP/REST
+* Behaviors
+* Routing
+* Authentication
+* Room partitioning
+* Presence
+* .NET
+* Erlang
+* Java
+* Node.js
+* Objective-C
+* PHP
+* Python
+* Ruby
+* Multiplexing
+
 
 ##### Subscribe
 
 ###### JavaScript (client)
 
-    var channel = new HydnaChannel('public.hydna.net/1886401376', 'rw');
+    var channel = new HydnaChannel('public.hydna.net/my-channel', 'r');
     
     channel.onmessage = function(event) {
       // handle update
@@ -32,9 +45,50 @@
     
 ##### Publish
 
-###### curl command
+###### JavaScript (client)
 
-    curl --data "Hello from curl" http://public.hydna.net/1886401376
+    var channel = new HydnaChannel('public.hydna.net/my-channel', 'w');
+
+    channel.onopen = function(event) {
+      channel.send('Hello world');
+    };
+
+
+##### Authentication
+
+Developers can deploy `Behaviors` (small snippets of code) to Hydna.
+Behaviors instruct Hydna how to behave when certain actions take place
+(when a channel is opened for example). This is useful when you want
+to keep state, authenticate users, connect with external services etc.
+
+The following example describes how authentication can be added to a channel.
+
+###### Behavior (Hydna BeMachine)
+
+    // Create rules for channel "/admin" 
+    behavior('/admin', {
+      open: function (event) {
+        if (event.token == 'password) {
+          event.allow();
+        } else {
+          event.deny('Incorrect password');
+        }
+      }
+    });
+
+###### JavaScript (client)
+
+    var channel = new HydnaChannel('public.hydna.net/admin?password', 'w');
+
+    channel.onopen = function (event) {
+      // Granted to open channel, handle update
+    };
+
+    channel.onclose = function (event) {
+      if (event.wasDenied && event.data == 'Incorrect password') {
+        // Incorrect password
+      }
+    };
 
 #### [PubNub](http://pubnub.com)
 
@@ -444,6 +498,14 @@ All JavaScript. No server. No sweat.
 * IIS
 * PubSub
 * RMI
+
+### [Mojolicious](http://mojolicio.us/)
+
+> A modern Perl web framework built from the ground-up as a nonblocking web server, including built-in support for web sockets.
+
+* Full nonblocking web server
+* WebSockets
+* Perl
 
 ### [Alchemy Websockets](http://alchemywebsockets.net/)
 
