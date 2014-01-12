@@ -550,7 +550,7 @@ All JavaScript. No server. No sweat.
 
 ### [Thunder Push](https://github.com/thunderpush/thunderpush)
 
-Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush (beaconpush.com) inspired HTTP API and client.
+> Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush (beaconpush.com) inspired HTTP API and client.
 
 * SockJS
 * Python
@@ -561,17 +561,32 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * Server Sent Events
 * EventSource
 * Ruby
+ 
+### [phpDaemon](http://daemon.io/)
 
-### [nowjs](https://github.com/Flotype/now)
+> Asynchronous server-side framework for Web and network applications implemented in PHP using libevent. phpDaemon can handle thousands of simultaneous connections
 
-* node.js
+* PHP
 
-*Doesn't appear to be actively maintained any more and the website is down.*
+### [http://nugget.codeplex.com/](Nugget)
+
+> A web socket server implemented in c#.
+> 
+> The goal of the projects is to create an easy way to start using HTML5 web sockets in .NET web applications.
+
+* C#
+* .NET
 
 ### [SuperWebSocket, a .NET WebSocket server](http://superwebsocket.codeplex.com/)
 
 * WebSockets,
 * .NET
+
+### [webbit](http://webbitserver.org/)
+
+> An event-based WebSocket and HTTP server in Java
+
+* Java
 
 ### [Fleck](https://github.com/statianzo/Fleck)
 
@@ -813,6 +828,12 @@ Represents a core building block of many other realtime web servers.
 * WebSockets
 * Server
 * Arduino
+
+### [nowjs](https://github.com/Flotype/now)
+
+* node.js
+
+*Doesn't appear to be actively maintained any more and the website is down.*
 
 <a name="websocket-client-libraries"></a>
 ## WebSocket Client Libraries
