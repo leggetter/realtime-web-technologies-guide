@@ -70,7 +70,7 @@ Streams can operate in one or several modes. As an example a stream can enable t
         stream.direct_msg(sender, "thanks for the message!");
     };
 
-##### Presence Mode (JavaScript)
+###### Presence Mode (JavaScript)
 
     stream.enable_presence("MyUserName", "PresenceToken");
     stream.onpresence = function(notification) {
