@@ -721,6 +721,14 @@ All JavaScript. No server. No sweat.
 * PHP
 * WebSockets
 
+### [BrainSocket](http://brainsocket.brainboxmedia.ca/)
+
+> A Laravel package that allows you to get up and running with real-time event-driven PHP apps using WebSockets.
+
+* Laravel
+* WebSockets
+* PHP
+
 ### [WebSockets and Joomla](https://github.com/eddieajau/joomla-platform-examples/tree/sockets/web/socket)
 
 * PHP
