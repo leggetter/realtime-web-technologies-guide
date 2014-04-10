@@ -4,6 +4,19 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
+#### [Fanout](http://fanout.io)
+
+> Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services
+using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
+
+* WebHooks
+* PubSub
+* XMPP
+* REST
+* WebSockets
+* HTTP Streaming
+* HTTP Long-Polling
+
 #### [Hydna](https://www.hydna.com/)
 
 * [Docs](https://www.hydna.com/documentation/)
