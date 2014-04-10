@@ -4,86 +4,6 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
-#### [Tambur.io](https://tambur.io)
-
-* [Docs](https://www.tambur.io/documentation)
-* [Pricing](https://www.tambur.io/pricing)
-* [Libraries](https://github.com/tamburio/)
-
-> Tambur.io provides your business with a simple messaging API to build scalable realtime web and mobile apps.
-
-* Realtime messaging
-* HTTP/REST
-* SSL
-* Websockets
-* Comet
-* Streams
-* Modes
-* Broadcast
-* Unicast
-* Authcast
-* Presence
-* Direct Messaging
-* PHP
-* Ruby
-* Java
-* .Net
-* Erlang
-* JavaScript
-
-
-##### Subscribe
-
-###### JavaScript (client)
-
-    var connection = new tambur.Connection("API_KEY", "APP_ID");
-    var stream = connection.get_stream("my_stream");
-    stream.onmessage = function(msg){
-        // handle message
-    };    
-    
-##### Publish
-
-###### Python (client)
-
-    tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
-    tambur.publish('my_stream', 'some message')
-
-##### Modes
-
-Streams can operate in one or several modes. As an example a stream can enable the 'Authentication' mode and therefore receive messages that target an authenticated receiver. Besides the 'Authentication' mode Tambur.io supports a 'Direct Messaging' mode that allows the subscribers of a stream to communicate directly among each other, as well as a 'Presence' mode that automatically publishes presence status of all the stream subscribers.
-
-###### Authentication Mode (JavaScript)
-
-    stream.enable_auth("AuthToken");
-    stream.onauth = function(msg) {
-        // handle authenticated message
-    };
-
-###### Direct Messaging Mode (JavaScript)
-
-    stream.enable_direct("MyUserName", "DirectToken");
-    stream.ondirect = function(msg) {
-        var sender = msg[0];
-        var content = msg[1];
-        /* reply back */
-        stream.direct_msg(sender, "thanks for the message!");
-    };
-
-###### Presence Mode (JavaScript)
-
-    stream.enable_presence("MyUserName", "PresenceToken");
-    stream.onpresence = function(notification) {
-        var user = notification[0];
-        var status = notification[1];
-        if (status === "up") {
-            // subscriber has joined the stream 
-        } else {
-            // subscriber has left the stream  
-        }
-    };
-
-
 #### [Hydna](https://www.hydna.com/)
 
 * [Docs](https://www.hydna.com/documentation/)
@@ -369,6 +289,86 @@ The following example describes how authentication can be added to a channel.
 
 	$rt = new Realtime( $URL, $AK, $PK, $TK );
 	$result = $rt->send("my-channel", "Hello World", $response);
+	
+#### [Tambur.io](https://tambur.io)
+
+* [Docs](https://www.tambur.io/documentation)
+* [Pricing](https://www.tambur.io/pricing)
+* [Libraries](https://github.com/tamburio/)
+
+> Tambur.io provides your business with a simple messaging API to build scalable realtime web and mobile apps.
+
+* Realtime messaging
+* HTTP/REST
+* SSL
+* Websockets
+* Comet
+* Streams
+* Modes
+* Broadcast
+* Unicast
+* Authcast
+* Presence
+* Direct Messaging
+* PHP
+* Ruby
+* Java
+* .Net
+* Erlang
+* JavaScript
+
+
+##### Subscribe
+
+###### JavaScript (client)
+
+    var connection = new tambur.Connection("API_KEY", "APP_ID");
+    var stream = connection.get_stream("my_stream");
+    stream.onmessage = function(msg){
+        // handle message
+    };    
+    
+##### Publish
+
+###### Python (client)
+
+    tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
+    tambur.publish('my_stream', 'some message')
+
+##### Modes
+
+Streams can operate in one or several modes. As an example a stream can enable the 'Authentication' mode and therefore receive messages that target an authenticated receiver. Besides the 'Authentication' mode Tambur.io supports a 'Direct Messaging' mode that allows the subscribers of a stream to communicate directly among each other, as well as a 'Presence' mode that automatically publishes presence status of all the stream subscribers.
+
+###### Authentication Mode (JavaScript)
+
+    stream.enable_auth("AuthToken");
+    stream.onauth = function(msg) {
+        // handle authenticated message
+    };
+
+###### Direct Messaging Mode (JavaScript)
+
+    stream.enable_direct("MyUserName", "DirectToken");
+    stream.ondirect = function(msg) {
+        var sender = msg[0];
+        var content = msg[1];
+        /* reply back */
+        stream.direct_msg(sender, "thanks for the message!");
+    };
+
+###### Presence Mode (JavaScript)
+
+    stream.enable_presence("MyUserName", "PresenceToken");
+    stream.onpresence = function(notification) {
+        var user = notification[0];
+        var status = notification[1];
+        if (status === "up") {
+            // subscriber has joined the stream 
+        } else {
+            // subscriber has left the stream  
+        }
+    };
+
 
 #### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
 
