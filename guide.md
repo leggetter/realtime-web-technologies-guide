@@ -16,6 +16,7 @@ using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
 * WebSockets
 * HTTP Streaming
 * HTTP Long-Polling
+* REST
 
 #### [Hydna](https://www.hydna.com/)
 
