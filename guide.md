@@ -390,28 +390,6 @@ Streams can operate in one or several modes. As an example a stream can enable t
 * Real-Time messaging
 * Real-Time data
 
-#### [OpenPush](http://openpush.im) - **No activity since 2011**
-
-
-#### [spire.io](http://spire.io) - **Down. Status unknown**
-
-> Build serverless applications with our secure, scalable web APIs for web and mobile development.
-
-#### x-stream.ly - **Service defunct**
-
-* JavaScript
-* REST API
-* Presence
-* Real-Time Client Push
-
-#### Kwwika - **Service defunct**
-
-* JavaScript
-* .NET
-* REST API
-* Real-Time Client Push
-* HTTP Streaming
-* Comet
 
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
