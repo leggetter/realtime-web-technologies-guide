@@ -531,14 +531,15 @@ All JavaScript. No server. No sweat.
 
 ### [Centrifuge](https://github.com/FZambia/centrifuge)
 
-> Simple platform for real-time message broadcasting in web applications.
+> Simple real-time messaging in web applications. Centrifuge built on top of Python's asynchronous Tornado server/framework. It has admin web interface, Javascript client to communicate from web browser, HTTP API and client to communicate from web application backend code.
 
+* Python
+* JavaScript
 * WebSockets
 * SockJS
 * HTTP-fallback
 * Presence
 * Event/Message history
-* JavaScript
 * PubSub
 
 ### [Spike-Engine](http://www.spike-engine.com)
