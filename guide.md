@@ -9,9 +9,10 @@
 * [Docs](https://fanout.io/docs/)
 * [Pricing](https://fanout.io/pricing/)
 
-> Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services
-using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
+> Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
+>
 > For front-end applications, Fanout's JavaScript library receives realtime JSON notifications with just a few lines of code. Integration is quick and simple.
+>
 > For services and APIs, you can add realtime functionality with minimal modification. By acting as a reverse proxy, Fanout's global cloud invisibly bridges realtime clients with the services you've already built.
 
 * WebHooks
