@@ -6,8 +6,13 @@
 
 #### [Fanout](http://fanout.io)
 
+* [Docs](https://fanout.io/docs/)
+* [Pricing](https://fanout.io/pricing/)
+
 > Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services
 using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
+> For front-end applications, Fanout's JavaScript library receives realtime JSON notifications with just a few lines of code. Integration is quick and simple.
+> For services and APIs, you can add realtime functionality with minimal modification. By acting as a reverse proxy, Fanout's global cloud invisibly bridges realtime clients with the services you've already built.
 
 * WebHooks
 * PubSub
@@ -21,9 +26,13 @@ using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
 #### [Hydna](https://www.hydna.com/)
 
 * [Docs](https://www.hydna.com/documentation/)
+* [Libraries](https://www.hydna.com/documentation/#client-libraries)
 * [Pricing](https://www.hydna.com/plans-and-pricing/)
 
+> A scalable real-time platform
 > Hydna is a hosted backend into which you can send data and have it instantly appear on other devices.
+> Instantly move data across platforms, technologies, and devices
+> Hydna is ideal for building dashboards, activity streams, notification- and chat systems, real-time collaboration, live statistics, remote controls, multiplayer games, and more.
 
 * Real-Time messaging
 * Binary
@@ -106,6 +115,7 @@ The following example describes how authentication can be added to a channel.
 
 #### [PubNub](http://pubnub.com)
 
+* [Docs](http://www.pubnub.com/documentation/)
 * [Libraries](http://www.pubnub.com/developers)
 * [Pricing](http://www.pubnub.com/pricing)
 
@@ -643,7 +653,7 @@ All JavaScript. No server. No sweat.
 
 * PHP
 
-### [http://nugget.codeplex.com/](Nugget)
+### [Nugget](http://nugget.codeplex.com/)
 
 > A web socket server implemented in c#.
 > 
