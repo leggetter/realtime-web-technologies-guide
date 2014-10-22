@@ -18,12 +18,6 @@ using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
 * HTTP Long-Polling
 * REST
 
-#### [GoInstant](http://goinstant.com)
-
-> Build scalable mobile & web apps easily with less code. No backend or server required.
->
-> GoInstant stores and syncs data in realtime, and provides a full stack of resources you can use to deliver awesome experiences for your users.
-
 #### [Hydna](https://www.hydna.com/)
 
 * [Docs](https://www.hydna.com/documentation/)
@@ -401,12 +395,6 @@ Streams can operate in one or several modes. As an example a stream can enable t
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
 
-#### [GoInstant](http://goinstant.com)
-
-> Build scalable mobile & web apps easily with less code. No backend or server required.
->
-> GoInstant stores and syncs data in realtime, and provides a full stack of resources you can use to deliver awesome experiences for your users.
-
 #### [Firebase](http://firebase.com)
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
@@ -416,6 +404,8 @@ Streams can operate in one or several modes. As an example a stream can enable t
 * JavaScript
 * WebSockets
 * BaaS (Backend as a Service)
+
+**[Acquired by Google](https://www.firebase.com/blog/2014-10-21-firebase-joins-google.html)**. Still active.
 
 ##### JavaScript (client)
 
