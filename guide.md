@@ -31,8 +31,11 @@
 * [Pricing](https://www.hydna.com/plans-and-pricing/)
 
 > A scalable real-time platform
+>
 > Hydna is a hosted backend into which you can send data and have it instantly appear on other devices.
+>
 > Instantly move data across platforms, technologies, and devices
+>
 > Hydna is ideal for building dashboards, activity streams, notification- and chat systems, real-time collaboration, live statistics, remote controls, multiplayer games, and more.
 
 * Real-Time messaging
