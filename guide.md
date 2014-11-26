@@ -629,6 +629,17 @@ All JavaScript. No server. No sweat.
 * node.js
 * Cross Domain Support
 
+### [SocketCluster](http://socketcluster.io/)
+
+> A highly scalable realtime environment for Node.js
+> SocketCluster is a new kind of engine which sits between Node.js and your code to provide you with a resilient, scalable, realtime architecture.
+>
+> With SC, you can build systems that make use of all CPU cores on a machine/instance. This removes the limitations of having to run your Node.js code as a single thread.
+>
+> SC also gives you the flexibility to scale up and scale out easily and at your own pace.
+
+* Node.js
+
 ### [Firehose.io](http://firehose.io)
 
 > Firehose is a minimally invasive way of building realtime web apps without complex protocols or rewriting your app from scratch. Its a dirt simple pub/sub server that keeps client-side Javascript models in synch with the server code via WebSockets or HTTP long polling.
