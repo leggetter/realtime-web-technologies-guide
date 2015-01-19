@@ -60,63 +60,6 @@
 * Multiplexing
 
 
-##### Subscribe
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/my-channel', 'r');
-    
-    channel.onmessage = function(event) {
-      // handle update
-    };
-    
-##### Publish
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/my-channel', 'w');
-
-    channel.onopen = function(event) {
-      channel.send('Hello world');
-    };
-
-
-##### Authentication
-
-Developers can deploy `Behaviors` (small snippets of code) to Hydna.
-Behaviors instruct Hydna how to behave when certain actions take place
-(when a channel is opened for example). This is useful when you want
-to keep state, authenticate users, connect with external services etc.
-
-The following example describes how authentication can be added to a channel.
-
-###### Behavior (Hydna BeMachine)
-
-    // Create rules for channel "/admin" 
-    behavior('/admin', {
-      open: function (event) {
-        if (event.token == 'password) {
-          event.allow();
-        } else {
-          event.deny('Incorrect password');
-        }
-      }
-    });
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/admin?password', 'w');
-
-    channel.onopen = function (event) {
-      // Granted to open channel, handle update
-    };
-
-    channel.onclose = function (event) {
-      if (event.wasDenied && event.data == 'Incorrect password') {
-        // Incorrect password
-      }
-    };
-
 #### [PubNub](http://pubnub.com)
 
 * [Docs](http://www.pubnub.com/documentation/)
@@ -125,6 +68,7 @@ The following example describes how authentication can be added to a channel.
 
 > Pubnub is the fastest cloud-hosted realtime messaging system for web and mobile apps.
 
+* HTTP
 * BOSH
 * Fallback-support
 * Real-Time Client Push
@@ -146,49 +90,7 @@ The following example describes how authentication can be added to a channel.
 * Silverlight
 * Titaniumf
 * REST API
-* PubSub
-
-##### Subscribe
-
-###### JavaScript (client)
-
-    var pubnub = PUBNUB.init({
-      subscribe_key: 'demo'
-    });
-    
-    pubnub.subscribe({
-      channel: 'my_channel',
-      message: function( msg )  {
-        // handle update
-      }
-    });
-    
-##### Publish
-
-###### JavaScript (client)
-
-    var pubnub = PUBNUB.init({
-      publish_key: 'demo'
-    });
-
-    pubnub.publish( {
-      channel: 'my_channel',        
-      message: 'hello!'
-    } );
-
-###### PHP
-
-    $pubnub = new Pubnub(
-      "demo",  ## PUBLISH_KEY
-      "demo",  ## SUBSCRIBE_KEY
-      "",      ## SECRET_KEY
-      false    ## SSL_ON?
-    );
-    
-    $info = $pubnub->publish( array(
-      'channel' => 'hello_world',
-      'message' => 'Hey World!'
-    ) );    
+* PubSub    
 
 #### [Pusher](http://pusher.com)
 
@@ -225,28 +127,6 @@ The following example describes how authentication can be added to a channel.
 * Presence
 * PubSub
 
-##### Subscribe
-
-###### JavaScript (client)
-
-    var pusher = new Pusher( 'APP_KEY', options );
-    var channel = pusher.subscribe( 'my-channel' );
-    channel.bind( 'my-event', function( eventData ) {
-      // handle event
-    } );
-
-##### Publish
-
-###### Node.js
-
-    var pusher = new Pusher( { appId: 'APP_ID', key: 'APP_KEY', secret: 'APP_KEY' } );
-    pusher.trigger( 'my-channel', 'my-event', { "some": "data" } );
-    
-###### PHP
-
-    $pusher = new Pusher( 'APP_KEY', 'APP_SECRET', 'APP_ID' );
-    $pusher->trigger( 'my-channel', 'my_event', array( 'some' => 'data' );
-
 #### [Realtime.co](http://framework.realtime.co)
 
 * [Docs](http://messaging-public.realtime.co/documentation/starting-guide/overview.html)
@@ -282,41 +162,6 @@ The following example describes how authentication can be added to a channel.
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
-
-##### Subscribe
-
-###### JavaScript (client)
-
-	var RealtimeClient = RealtimeFactory.createClient();
-	RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
-	
-	RealtimeClient.onConnected = function (theClient) {               
-    	theClient.subscribe('my-channel', true,
-        	function (theClient, channel, msg) {
-          		console.log("Received message:", msg);
-        	});                                
-    };    
-
-##### Publish
-
-###### JavaScript (client)
-
-	var RealtimeClient = RealtimeFactory.createClient();
-    RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
-	
-	RealtimeClient.onConnected = function (theClient) {               
-    	theClient.send('my-channel', 'Hello World');                                
-    };
-    
-###### PHP
-
-    $URL = 'http://ortc-developers.realtime.co/server/2.1';
-	$AK = '[YOUR_APPLICATION_KEY]';
-	$PK = '[YOUR_APPLICATION_PRIVATE_KEY]';
-	$TK = '[USER_TOKEN]'; // not necessary if private key is used
-
-	$rt = new Realtime( $URL, $AK, $PK, $TK );
-	$result = $rt->send("my-channel", "Hello World", $response);
 	
 #### [Tambur.io](https://tambur.io)
 
