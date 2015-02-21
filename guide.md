@@ -507,6 +507,15 @@ All JavaScript. No server. No sweat.
 * EventSource
 * Ruby
  
+### [Anorexic](https://github.com/boazsegev/anorexic/)
+
+> Anorexic is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from being both a barebones lightweight framework and keeping your code clean and streamlined.
+
+* WebSockets
+* Long Pulling (supports RESTful HTTP routes)
+* HTTP Streaming
+* Ruby
+ 
 ### [phpDaemon](http://daemon.io/)
 
 > Asynchronous server-side framework for Web and network applications implemented in PHP using libevent. phpDaemon can handle thousands of simultaneous connections
