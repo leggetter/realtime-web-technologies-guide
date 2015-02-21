@@ -507,9 +507,9 @@ All JavaScript. No server. No sweat.
 * EventSource
 * Ruby
  
-### [Anorexic](https://github.com/boazsegev/anorexic/)
+### [Plezi](https://github.com/boazsegev/plezi)
 
-> Anorexic is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from being both a barebones lightweight framework and keeping your code clean and streamlined.
+> Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
 * WebSockets
 * Long Pulling (supports RESTful HTTP routes)
