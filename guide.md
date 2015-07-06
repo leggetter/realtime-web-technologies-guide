@@ -4,12 +4,39 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
+#### [Fanout](http://fanout.io)
+
+* [Docs](https://fanout.io/docs/)
+* [Pricing](https://fanout.io/pricing/)
+
+> Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
+>
+> For front-end applications, Fanout's JavaScript library receives realtime JSON notifications with just a few lines of code. Integration is quick and simple.
+>
+> For services and APIs, you can add realtime functionality with minimal modification. By acting as a reverse proxy, Fanout's global cloud invisibly bridges realtime clients with the services you've already built.
+
+* WebHooks
+* PubSub
+* XMPP
+* REST
+* WebSockets
+* HTTP Streaming
+* HTTP Long-Polling
+* REST
+
 #### [Hydna](https://www.hydna.com/)
 
 * [Docs](https://www.hydna.com/documentation/)
+* [Libraries](https://www.hydna.com/documentation/#client-libraries)
 * [Pricing](https://www.hydna.com/plans-and-pricing/)
 
+> A scalable real-time platform
+>
 > Hydna is a hosted backend into which you can send data and have it instantly appear on other devices.
+>
+> Instantly move data across platforms, technologies, and devices
+>
+> Hydna is ideal for building dashboards, activity streams, notification- and chat systems, real-time collaboration, live statistics, remote controls, multiplayer games, and more.
 
 * Real-Time messaging
 * Binary
@@ -33,70 +60,15 @@
 * Multiplexing
 
 
-##### Subscribe
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/my-channel', 'r');
-    
-    channel.onmessage = function(event) {
-      // handle update
-    };
-    
-##### Publish
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/my-channel', 'w');
-
-    channel.onopen = function(event) {
-      channel.send('Hello world');
-    };
-
-
-##### Authentication
-
-Developers can deploy `Behaviors` (small snippets of code) to Hydna.
-Behaviors instruct Hydna how to behave when certain actions take place
-(when a channel is opened for example). This is useful when you want
-to keep state, authenticate users, connect with external services etc.
-
-The following example describes how authentication can be added to a channel.
-
-###### Behavior (Hydna BeMachine)
-
-    // Create rules for channel "/admin" 
-    behavior('/admin', {
-      open: function (event) {
-        if (event.token == 'password) {
-          event.allow();
-        } else {
-          event.deny('Incorrect password');
-        }
-      }
-    });
-
-###### JavaScript (client)
-
-    var channel = new HydnaChannel('public.hydna.net/admin?password', 'w');
-
-    channel.onopen = function (event) {
-      // Granted to open channel, handle update
-    };
-
-    channel.onclose = function (event) {
-      if (event.wasDenied && event.data == 'Incorrect password') {
-        // Incorrect password
-      }
-    };
-
 #### [PubNub](http://pubnub.com)
 
+* [Docs](http://www.pubnub.com/documentation/)
 * [Libraries](http://www.pubnub.com/developers)
 * [Pricing](http://www.pubnub.com/pricing)
 
 > Pubnub is the fastest cloud-hosted realtime messaging system for web and mobile apps.
 
+* HTTP
 * BOSH
 * Fallback-support
 * Real-Time Client Push
@@ -118,49 +90,7 @@ The following example describes how authentication can be added to a channel.
 * Silverlight
 * Titaniumf
 * REST API
-* PubSub
-
-##### Subscribe
-
-###### JavaScript (client)
-
-    var pubnub = PUBNUB.init({
-      subscribe_key: 'demo'
-    });
-    
-    pubnub.subscribe({
-      channel: 'my_channel',
-      message: function( msg )  {
-        // handle update
-      }
-    });
-    
-##### Publish
-
-###### JavaScript (client)
-
-    var pubnub = PUBNUB.init({
-      publish_key: 'demo'
-    });
-
-    pubnub.publish( {
-      channel: 'my_channel',        
-      message: 'hello!'
-    } );
-
-###### PHP
-
-    $pubnub = new Pubnub(
-      "demo",  ## PUBLISH_KEY
-      "demo",  ## SUBSCRIBE_KEY
-      "",      ## SECRET_KEY
-      false    ## SSL_ON?
-    );
-    
-    $info = $pubnub->publish( array(
-      'channel' => 'hello_world',
-      'message' => 'Hey World!'
-    ) );    
+* PubSub    
 
 #### [Pusher](http://pusher.com)
 
@@ -197,28 +127,6 @@ The following example describes how authentication can be added to a channel.
 * Presence
 * PubSub
 
-##### Subscribe
-
-###### JavaScript (client)
-
-    var pusher = new Pusher( 'APP_KEY', options );
-    var channel = pusher.subscribe( 'my-channel' );
-    channel.bind( 'my-event', function( eventData ) {
-      // handle event
-    } );
-
-##### Publish
-
-###### Node.js
-
-    var pusher = new Pusher( { appId: 'APP_ID', key: 'APP_KEY', secret: 'APP_KEY' } );
-    pusher.trigger( 'my-channel', 'my-event', { "some": "data" } );
-    
-###### PHP
-
-    $pusher = new Pusher( 'APP_KEY', 'APP_SECRET', 'APP_ID' );
-    $pusher->trigger( 'my-channel', 'my_event', array( 'some' => 'data' );
-
 #### [Realtime.co](http://framework.realtime.co)
 
 * [Docs](http://messaging-public.realtime.co/documentation/starting-guide/overview.html)
@@ -254,41 +162,86 @@ The following example describes how authentication can be added to a channel.
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
+	
+#### [Tambur.io](https://tambur.io)
+
+* [Docs](https://www.tambur.io/documentation)
+* [Pricing](https://www.tambur.io/pricing)
+* [Libraries](https://github.com/tamburio/)
+
+> Tambur.io provides your business with a simple messaging API to build scalable realtime web and mobile apps.
+
+* Realtime messaging
+* HTTP/REST
+* SSL
+* Websockets
+* Comet
+* Streams
+* Modes
+* Broadcast
+* Unicast
+* Authcast
+* Presence
+* Direct Messaging
+* PHP
+* Ruby
+* Java
+* .Net
+* Erlang
+* JavaScript
+
 
 ##### Subscribe
 
 ###### JavaScript (client)
 
-	var RealtimeClient = RealtimeFactory.createClient();
-	RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
-	
-	RealtimeClient.onConnected = function (theClient) {               
-    	theClient.subscribe('my-channel', true,
-        	function (theClient, channel, msg) {
-          		console.log("Received message:", msg);
-        	});                                
+    var connection = new tambur.Connection("API_KEY", "APP_ID");
+    var stream = connection.get_stream("my_stream");
+    stream.onmessage = function(msg){
+        // handle message
     };    
-
+    
 ##### Publish
 
-###### JavaScript (client)
+###### Python (client)
 
-	var RealtimeClient = RealtimeFactory.createClient();
-    RealtimeClient.connect('[YOUR_APPLICATION_KEY]', '[USER_TOKEN]');
-	
-	RealtimeClient.onConnected = function (theClient) {               
-    	theClient.send('my-channel', 'Hello World');                                
+    tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
+    tambur.publish('my_stream', 'some message')
+
+##### Modes
+
+Streams can operate in one or several modes. As an example a stream can enable the 'Authentication' mode and therefore receive messages that target an authenticated receiver. Besides the 'Authentication' mode Tambur.io supports a 'Direct Messaging' mode that allows the subscribers of a stream to communicate directly among each other, as well as a 'Presence' mode that automatically publishes presence status of all the stream subscribers.
+
+###### Authentication Mode (JavaScript)
+
+    stream.enable_auth("AuthToken");
+    stream.onauth = function(msg) {
+        // handle authenticated message
     };
-    
-###### PHP
 
-    $URL = 'http://ortc-developers.realtime.co/server/2.1';
-	$AK = '[YOUR_APPLICATION_KEY]';
-	$PK = '[YOUR_APPLICATION_PRIVATE_KEY]';
-	$TK = '[USER_TOKEN]'; // not necessary if private key is used
+###### Direct Messaging Mode (JavaScript)
 
-	$rt = new Realtime( $URL, $AK, $PK, $TK );
-	$result = $rt->send("my-channel", "Hello World", $response);
+    stream.enable_direct("MyUserName", "DirectToken");
+    stream.ondirect = function(msg) {
+        var sender = msg[0];
+        var content = msg[1];
+        /* reply back */
+        stream.direct_msg(sender, "thanks for the message!");
+    };
+
+###### Presence Mode (JavaScript)
+
+    stream.enable_presence("MyUserName", "PresenceToken");
+    stream.onpresence = function(notification) {
+        var user = notification[0];
+        var status = notification[1];
+        if (status === "up") {
+            // subscriber has joined the stream 
+        } else {
+            // subscriber has left the stream  
+        }
+    };
+
 
 #### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
 
@@ -297,28 +250,6 @@ The following example describes how authentication can be added to a channel.
 * Real-Time messaging
 * Real-Time data
 
-#### [OpenPush](http://openpush.im) - **No activity since 2011**
-
-
-#### [spire.io](http://spire.io) - **Down. Status unknown**
-
-> Build serverless applications with our secure, scalable web APIs for web and mobile development.
-
-#### x-stream.ly - **Service defunct**
-
-* JavaScript
-* REST API
-* Presence
-* Real-Time Client Push
-
-#### Kwwika - **Service defunct**
-
-* JavaScript
-* .NET
-* REST API
-* Real-Time Client Push
-* HTTP Streaming
-* Comet
 
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
@@ -332,6 +263,8 @@ The following example describes how authentication can be added to a channel.
 * JavaScript
 * WebSockets
 * BaaS (Backend as a Service)
+
+**[Acquired by Google](https://www.firebase.com/blog/2014-10-21-firebase-joins-google.html)**. Still active.
 
 ##### JavaScript (client)
 
@@ -457,16 +390,17 @@ All JavaScript. No server. No sweat.
 * Lua
 * BOSH
 
-### [Centrifuge](https://github.com/FZambia/centrifuge)
+### [Centrifugo](https://github.com/centrifugal/centrifugo)
 
-> Simple platform for real-time message broadcasting in web applications.
+> Real-time messaging server in Go language. This is a successor of [Centrifuge](https://github.com/centrifugal/centrifuge). Server has simple API to publish messages into channels, provides presence and history information and more. Javascript client available to communicate from web browser. See full documentation [on gitbooks.io](http://fzambia.gitbooks.io/centrifugal/content/index.html).
 
+* Go
+* JavaScript
 * WebSockets
 * SockJS
 * HTTP-fallback
 * Presence
 * Event/Message history
-* JavaScript
 * PubSub
 
 ### [Spike-Engine](http://www.spike-engine.com)
@@ -540,6 +474,17 @@ All JavaScript. No server. No sweat.
 * node.js
 * Cross Domain Support
 
+### [SocketCluster](http://socketcluster.io/)
+
+> A highly scalable realtime environment for Node.js
+> SocketCluster is a new kind of engine which sits between Node.js and your code to provide you with a resilient, scalable, realtime architecture.
+>
+> With SC, you can build systems that make use of all CPU cores on a machine/instance. This removes the limitations of having to run your Node.js code as a single thread.
+>
+> SC also gives you the flexibility to scale up and scale out easily and at your own pace.
+
+* Node.js
+
 ### [Firehose.io](http://firehose.io)
 
 > Firehose is a minimally invasive way of building realtime web apps without complex protocols or rewriting your app from scratch. Its a dirt simple pub/sub server that keeps client-side Javascript models in synch with the server code via WebSockets or HTTP long polling.
@@ -550,7 +495,7 @@ All JavaScript. No server. No sweat.
 
 ### [Thunder Push](https://github.com/thunderpush/thunderpush)
 
-Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush (beaconpush.com) inspired HTTP API and client.
+> Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush (beaconpush.com) inspired HTTP API and client.
 
 * SockJS
 * Python
@@ -561,17 +506,41 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 * Server Sent Events
 * EventSource
 * Ruby
+ 
+### [Plezi](https://github.com/boazsegev/plezi)
 
-### [nowjs](https://github.com/Flotype/now)
+> Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
-* node.js
+* WebSockets
+* Long Pulling (supports RESTful HTTP routes)
+* HTTP Streaming
+* Ruby
+ 
+### [phpDaemon](http://daemon.io/)
 
-*Doesn't appear to be actively maintained any more and the website is down.*
+> Asynchronous server-side framework for Web and network applications implemented in PHP using libevent. phpDaemon can handle thousands of simultaneous connections
+
+* PHP
+
+### [Nugget](http://nugget.codeplex.com/)
+
+> A web socket server implemented in c#.
+> 
+> The goal of the projects is to create an easy way to start using HTML5 web sockets in .NET web applications.
+
+* C#
+* .NET
 
 ### [SuperWebSocket, a .NET WebSocket server](http://superwebsocket.codeplex.com/)
 
 * WebSockets,
 * .NET
+
+### [webbit](http://webbitserver.org/)
+
+> An event-based WebSocket and HTTP server in Java
+
+* Java
 
 ### [Fleck](https://github.com/statianzo/Fleck)
 
@@ -625,6 +594,14 @@ Thunderpush is a Tornado and SockJS based push service. It provides a Beaconpush
 
 * PHP
 * WebSockets
+
+### [BrainSocket](http://brainsocket.brainboxmedia.ca/)
+
+> A Laravel package that allows you to get up and running with real-time event-driven PHP apps using WebSockets.
+
+* Laravel
+* WebSockets
+* PHP
 
 ### [WebSockets and Joomla](https://github.com/eddieajau/joomla-platform-examples/tree/sockets/web/socket)
 
@@ -813,6 +790,12 @@ Represents a core building block of many other realtime web servers.
 * WebSockets
 * Server
 * Arduino
+
+### [nowjs](https://github.com/Flotype/now)
+
+* node.js
+
+*Doesn't appear to be actively maintained any more and the website is down.*
 
 <a name="websocket-client-libraries"></a>
 ## WebSocket Client Libraries
