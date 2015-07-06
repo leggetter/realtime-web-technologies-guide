@@ -390,11 +390,11 @@ All JavaScript. No server. No sweat.
 * Lua
 * BOSH
 
-### [Centrifuge](https://github.com/FZambia/centrifuge)
+### [Centrifugo](https://github.com/centrifugal/centrifugo)
 
-> Simple real-time messaging in web applications. Centrifuge built on top of Python's asynchronous Tornado server/framework. It has admin web interface, Javascript client to communicate from web browser, HTTP API and client to communicate from web application backend code.
+> Real-time messaging server in Go language. This is a successor of [Centrifuge](https://github.com/centrifugal/centrifuge). Server has simple API to publish messages into channels, provides presence and history information and more. Javascript client available to communicate from web browser. See full documentation [on gitbooks.io](http://fzambia.gitbooks.io/centrifugal/content/index.html).
 
-* Python
+* Go
 * JavaScript
 * WebSockets
 * SockJS
