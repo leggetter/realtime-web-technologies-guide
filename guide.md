@@ -148,7 +148,7 @@
 * iOS
 * Titanium Appcelerator
 * Windows Phone
-* node.js
+* Node.js
 * Objective-C
 * PHP
 * Python
@@ -156,6 +156,12 @@
 * Ruby
 * Silverlight
 * ActionScript
+* React Native
+* Xamarin
+* Unity
+* Cordova/PhoneGap
+* Go
+* Tessel (IoT)
 * REST API
 * Pub/Sub
 * Presence
@@ -316,12 +322,15 @@ All JavaScript. No server. No sweat.
 * iOS
 * Android (Java)
 * Node.js
+* React Native
+* Unity
 * NoSQL
 * DynamoDB
 * HTTP Streaming
 * HTTP Long-polling
 * WebSockets
 * Mobile Push Notifications for iOS and Android (APNS and GCM)
+* Server-side triggers and business logic 
 
 ##### JavaScript (client)
 
