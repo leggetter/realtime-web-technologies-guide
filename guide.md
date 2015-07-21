@@ -381,6 +381,19 @@ All JavaScript. No server. No sweat.
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Services
 
+### [Deepstream.io](http://deepstream.io/)
+
+> Deepstream.io is a fast and easy to use realtime server written in node. It offers persistant data structures, RPC and PubSub messaging that works on both client and server. Deepstream can connect to a variety of caches and databases and scales horizontally across multiple servers.
+
+* JavaScript
+* WebSockets
+* HTTP-fallback
+* PubSub
+* Persistant Data Structures
+* RPC
+* Events
+* node.js
+
 ### [Prosody](http://prosody.im/)
 
 > Prosody is a modern flexible communications server for Jabber/XMPP written in Lua. It aims to be easy to set up and configure, and light on resources. For developers it aims to be easy to extend and give a flexible system on which to rapidly develop added functionality, or prototype new protocols.
