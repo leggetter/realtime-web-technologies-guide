@@ -178,6 +178,7 @@
 > Streamdata.io is a real-time cache proxy allowing you to poll JSON REST APIs and push updates to clients. But wait, there is more: Streamdata.io keeps a history of modifications that occur on the data between two pollings! This way, streamdata.io is able to give you the list of modifications which happened since last time you fetched the data.
 
 * Server-Sent Events
+* JSON Patch
 * Fallback-support
 * REST
 * PubSub
