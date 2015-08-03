@@ -187,25 +187,6 @@
 * Java
 * Android
 
-##### JavaScript (client)
-    var myEvent = streamdataio.createEventSource("http://mysite.com/myRestService",<app_token>);
-
-    myEventSource.onData(function(data){
-        // initialize your data with the initial snapshot
-    
-    }).onPatch(function(data){
-        // update the data with the provided patch
-    
-    }).onError(function(data){
-        // do whatever you need in case of error
-    
-    }).onOpen(function(data){
-        // you can also add custom behavior when the stream is opened
-    });
-
-    myEventSource.open();
-
-
 #### [Tambur.io](https://tambur.io)
 
 * [Docs](https://www.tambur.io/documentation)
