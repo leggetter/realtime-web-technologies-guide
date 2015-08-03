@@ -168,7 +168,26 @@
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
-	
+
+#### [Streamdata.io](http://streamdata.io)
+
+* [Docs](http://streamdata.io/doc/)
+* [Pricing](http://streamdata.io/pricing/)
+* [Libraries](https://github.com/streamdataio/)
+
+> Streamdata.io is a real-time cache proxy allowing you to poll JSON REST APIs and push updates to clients. But wait, there is more: Streamdata.io keeps a history of modifications that occur on the data between two pollings! This way, streamdata.io is able to give you the list of modifications which happened since last time you fetched the data.
+
+* Server-Sent Events
+* JSON Patch
+* Fallback-support
+* REST
+* PubSub
+* Proxy
+* JavaScript
+* iOS
+* Java
+* Android
+
 #### [Tambur.io](https://tambur.io)
 
 * [Docs](https://www.tambur.io/documentation)
