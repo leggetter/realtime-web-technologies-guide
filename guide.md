@@ -220,18 +220,25 @@
 
 ###### JavaScript (client)
 
-    var connection = new tambur.Connection("API_KEY", "APP_ID");
-    var stream = connection.get_stream("my_stream");
-    stream.onmessage = function(msg){
-        // handle message
-    };
+``` javascript
+
+var connection = new tambur.Connection("API_KEY", "APP_ID");
+var stream = connection.get_stream("my_stream");
+stream.onmessage = function(msg){
+    // handle message
+};
+```
 
 ##### Publish
 
 ###### Python (client)
 
-    tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
-    tambur.publish('my_stream', 'some message')
+``` python
+
+tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
+tambur.publish('my_stream', 'some message')
+
+```
 
 ##### Modes
 
@@ -239,34 +246,39 @@ Streams can operate in one or several modes. As an example a stream can enable t
 
 ###### Authentication Mode (JavaScript)
 
-    stream.enable_auth("AuthToken");
-    stream.onauth = function(msg) {
-        // handle authenticated message
-    };
+``` javascript
+stream.enable_auth("AuthToken");
+stream.onauth = function(msg) {
+    // handle authenticated message
+};
+```
 
 ###### Direct Messaging Mode (JavaScript)
 
-    stream.enable_direct("MyUserName", "DirectToken");
-    stream.ondirect = function(msg) {
-        var sender = msg[0];
-        var content = msg[1];
-        /* reply back */
-        stream.direct_msg(sender, "thanks for the message!");
-    };
+``` javascript
+stream.enable_direct("MyUserName", "DirectToken");
+stream.ondirect = function(msg) {
+    var sender = msg[0];
+    var content = msg[1];
+    /* reply back */
+    stream.direct_msg(sender, "thanks for the message!");
+};
+```
 
 ###### Presence Mode (JavaScript)
 
-    stream.enable_presence("MyUserName", "PresenceToken");
-    stream.onpresence = function(notification) {
-        var user = notification[0];
-        var status = notification[1];
-        if (status === "up") {
-            // subscriber has joined the stream
-        } else {
-            // subscriber has left the stream  
-        }
-    };
-
+``` javascript
+stream.enable_presence("MyUserName", "PresenceToken");
+stream.onpresence = function(notification) {
+    var user = notification[0];
+    var status = notification[1];
+    if (status === "up") {
+        // subscriber has joined the stream
+    } else {
+        // subscriber has left the stream  
+    }
+};
+```
 
 #### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
 
@@ -274,7 +286,6 @@ Streams can operate in one or several modes. As an example a stream can enable t
 * Real-Time Client Push
 * Real-Time messaging
 * Real-Time data
-
 
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
@@ -293,21 +304,23 @@ Streams can operate in one or several modes. As an example a stream can enable t
 
 ##### JavaScript (client)
 
-    var dataRef = new Firebase( 'https://my-app.firebaseio.com/' );
+``` javascript
+var dataRef = new Firebase( 'https://my-app.firebaseio.com/' );
 
-    dataRef.push( { name: '@leggetter', text: 'Yo from FOWA!' } );
+dataRef.push( { name: '@leggetter', text: 'Yo from FOWA!' } );
 
-    dataRef.on( 'child_added', function(snapshot) {
-      // Add the data
-    } );
+dataRef.on( 'child_added', function(snapshot) {
+  // Add the data
+} );
 
-    dataRef.on( 'child_changed', function(snapshot) {
-      // Update the data
-    } );
+dataRef.on( 'child_changed', function(snapshot) {
+  // Update the data
+} );
 
-    dataRef.on( 'child_removed', function(snapshot) {
-      // Remove the data
-    } );
+dataRef.on( 'child_removed', function(snapshot) {
+  // Remove the data
+} );
+```
 
 #### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
 
@@ -353,36 +366,38 @@ All JavaScript. No server. No sweat.
 
 ##### JavaScript (client)
 
-	var credentials = {
-        applicationKey: "[YOUR_APPLICATION_KEY]",
-        authenticationToken: "[USER_TOKEN]"
-    }
+``` javascript
+var credentials = {
+    applicationKey: "[YOUR_APPLICATION_KEY]",
+    authenticationToken: "[USER_TOKEN]"
+}
 
-    var storageRef = Realtime.Storage.create(credentials);
-	var tableRef = storageRef.table("chat-messages");
+var storageRef = Realtime.Storage.create(credentials);
+var tableRef = storageRef.table("chat-messages");
 
-	var chat-msg = {
-    	chatid : "My chat room",
-    	timestamp : +new Date(),
-    	text : "Hello World",
-    	nickname : "Beavis"
-    };
+var chat-msg = {
+  	chatid : "My chat room",
+  	timestamp : +new Date(),
+  	text : "Hello World",
+  	nickname : "Beavis"
+};
 
-    tableRef.push(chat-msg, function() {
-    	// item successfully committed to database
-    });
+tableRef.push(chat-msg, function() {
+	// item successfully committed to database
+});
 
- 	tableRef.on("put", function(item) {
-        // item was added to the database table
-    });
+tableRef.on("put", function(item) {
+    // item was added to the database table
+});
 
-	tableRef.on("update", function(item) {
-        // item was updated at the database table
-    });
+tableRef.on("update", function(item) {
+    // item was updated at the database table
+});
 
-	tableRef.on("delete", function(item) {
-        // item was removed from the database table
-    });
+tableRef.on("delete", function(item) {
+    // item was removed from the database table
+});
+```
 
 #### [simperium](https://simperium.com/)
 
