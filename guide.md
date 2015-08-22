@@ -90,7 +90,7 @@
 * Silverlight
 * Titaniumf
 * REST API
-* PubSub    
+* PubSub
 
 #### [Pusher](http://pusher.com)
 
@@ -220,18 +220,25 @@
 
 ###### JavaScript (client)
 
-    var connection = new tambur.Connection("API_KEY", "APP_ID");
-    var stream = connection.get_stream("my_stream");
-    stream.onmessage = function(msg){
-        // handle message
-    };    
-    
+``` javascript
+
+var connection = new tambur.Connection("API_KEY", "APP_ID");
+var stream = connection.get_stream("my_stream");
+stream.onmessage = function(msg){
+    // handle message
+};
+```
+
 ##### Publish
 
 ###### Python (client)
 
-    tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
-    tambur.publish('my_stream', 'some message')
+``` python
+
+tambur = Tambur(api_key='API_KEY', app_id='APP_ID', secret='SECRET')
+tambur.publish('my_stream', 'some message')
+
+```
 
 ##### Modes
 
@@ -239,34 +246,39 @@ Streams can operate in one or several modes. As an example a stream can enable t
 
 ###### Authentication Mode (JavaScript)
 
-    stream.enable_auth("AuthToken");
-    stream.onauth = function(msg) {
-        // handle authenticated message
-    };
+``` javascript
+stream.enable_auth("AuthToken");
+stream.onauth = function(msg) {
+    // handle authenticated message
+};
+```
 
 ###### Direct Messaging Mode (JavaScript)
 
-    stream.enable_direct("MyUserName", "DirectToken");
-    stream.ondirect = function(msg) {
-        var sender = msg[0];
-        var content = msg[1];
-        /* reply back */
-        stream.direct_msg(sender, "thanks for the message!");
-    };
+``` javascript
+stream.enable_direct("MyUserName", "DirectToken");
+stream.ondirect = function(msg) {
+    var sender = msg[0];
+    var content = msg[1];
+    /* reply back */
+    stream.direct_msg(sender, "thanks for the message!");
+};
+```
 
 ###### Presence Mode (JavaScript)
 
-    stream.enable_presence("MyUserName", "PresenceToken");
-    stream.onpresence = function(notification) {
-        var user = notification[0];
-        var status = notification[1];
-        if (status === "up") {
-            // subscriber has joined the stream 
-        } else {
-            // subscriber has left the stream  
-        }
-    };
-
+``` javascript
+stream.enable_presence("MyUserName", "PresenceToken");
+stream.onpresence = function(notification) {
+    var user = notification[0];
+    var status = notification[1];
+    if (status === "up") {
+        // subscriber has joined the stream
+    } else {
+        // subscriber has left the stream  
+    }
+};
+```
 
 #### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
 
@@ -274,7 +286,6 @@ Streams can operate in one or several modes. As an example a stream can enable t
 * Real-Time Client Push
 * Real-Time messaging
 * Real-Time data
-
 
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
@@ -293,21 +304,23 @@ Streams can operate in one or several modes. As an example a stream can enable t
 
 ##### JavaScript (client)
 
-    var dataRef = new Firebase( 'https://my-app.firebaseio.com/' );
+``` javascript
+var dataRef = new Firebase( 'https://my-app.firebaseio.com/' );
 
-    dataRef.push( { name: '@leggetter', text: 'Yo from FOWA!' } );
+dataRef.push( { name: '@leggetter', text: 'Yo from FOWA!' } );
 
-    dataRef.on( 'child_added', function(snapshot) {
-      // Add the data
-    } );
+dataRef.on( 'child_added', function(snapshot) {
+  // Add the data
+} );
 
-    dataRef.on( 'child_changed', function(snapshot) {
-      // Update the data
-    } );
+dataRef.on( 'child_changed', function(snapshot) {
+  // Update the data
+} );
 
-    dataRef.on( 'child_removed', function(snapshot) {
-      // Remove the data
-    } );
+dataRef.on( 'child_removed', function(snapshot) {
+  // Remove the data
+} );
+```
 
 #### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
 
@@ -349,41 +362,42 @@ All JavaScript. No server. No sweat.
 * HTTP Long-polling
 * WebSockets
 * Mobile Push Notifications for iOS and Android (APNS and GCM)
-* Server-side triggers and business logic 
+* Server-side triggers and business logic
 
 ##### JavaScript (client)
 
-	var credentials = {
-        applicationKey: "[YOUR_APPLICATION_KEY]",
-        authenticationToken: "[USER_TOKEN]"
-    }
+``` javascript
+var credentials = {
+    applicationKey: "[YOUR_APPLICATION_KEY]",
+    authenticationToken: "[USER_TOKEN]"
+}
 
-    var storageRef = Realtime.Storage.create(credentials);
-	var tableRef = storageRef.table("chat-messages");
+var storageRef = Realtime.Storage.create(credentials);
+var tableRef = storageRef.table("chat-messages");
 
-	var chat-msg = {
-    	chatid : "My chat room",
-    	timestamp : +new Date(),
-    	text : "Hello World",
-    	nickname : "Beavis"
-    };
-       
-    tableRef.push(chat-msg, function() {
-    	// item successfully committed to database    
-    });
+var chat-msg = {
+  	chatid : "My chat room",
+  	timestamp : +new Date(),
+  	text : "Hello World",
+  	nickname : "Beavis"
+};
 
- 	tableRef.on("put", function(item) {
-        // item was added to the database table
-    });
+tableRef.push(chat-msg, function() {
+	// item successfully committed to database
+});
 
-	tableRef.on("update", function(item) {
-        // item was updated at the database table
-    });
+tableRef.on("put", function(item) {
+    // item was added to the database table
+});
 
-	tableRef.on("delete", function(item) {
-        // item was removed from the database table
-    });
+tableRef.on("update", function(item) {
+    // item was updated at the database table
+});
 
+tableRef.on("delete", function(item) {
+    // item was removed from the database table
+});
+```
 
 #### [simperium](https://simperium.com/)
 
@@ -408,6 +422,23 @@ All JavaScript. No server. No sweat.
 
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Services
+
+<img width="100%" src="/images/rethinkdb-banner.png">
+
+### [RethinkDB](http://rethinkdb.com)
+
+> * Open-source database for building realtime web applications
+* NoSQL database that stores schemaless JSON documents
+* Distributed database that is easy to scale
+* High availability database with automatic failover and robust fault tolerance
+
+>RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
+
+* [Drivers: Javascript, Python, Ruby, Go, Elixir, .NET](https://github.com/rethinkdb/rethinkdb#quickstart)
+* ["PubSub"-like monitoring on queries for real-time data to the driver](http://rethinkdb.com/docs/changefeeds/javascript/)
+* [Easy to use and parse ReQL query language](http://rethinkdb.com/docs/introduction-to-reql/)
+* Built in Web GUI and interface for data exploration and cluster management
+
 
 ### [Deepstream.io](http://deepstream.io/)
 
@@ -547,7 +578,7 @@ All JavaScript. No server. No sweat.
 * Server Sent Events
 * EventSource
 * Ruby
- 
+
 ### [Plezi](https://github.com/boazsegev/plezi)
 
 > Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
@@ -556,7 +587,7 @@ All JavaScript. No server. No sweat.
 * Long Pulling (supports RESTful HTTP routes)
 * HTTP Streaming
 * Ruby
- 
+
 ### [phpDaemon](http://daemon.io/)
 
 > Asynchronous server-side framework for Web and network applications implemented in PHP using libevent. phpDaemon can handle thousands of simultaneous connections
@@ -566,7 +597,7 @@ All JavaScript. No server. No sweat.
 ### [Nugget](http://nugget.codeplex.com/)
 
 > A web socket server implemented in c#.
-> 
+>
 > The goal of the projects is to create an easy way to start using HTML5 web sockets in .NET web applications.
 
 * C#
@@ -705,7 +736,8 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * .NET
 * Fallback-support
-* 
+*
+
 ### [Tornado](http://www.tornadoweb.org/en/stable/)
 
 > Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
