@@ -421,16 +421,11 @@ tableRef.on("delete", function(item) {
 ### [Echo](http://aboutecho.com)
 
 <a name="self-hosted"></a>
-## Self Hosted Realtime Services
-
-<img width="100%" src="./images/rethinkdb-banner.png">
+## Self Hosted Realtime Solutions
 
 ### [RethinkDB](http://rethinkdb.com)
 
-> * Open-source database for building realtime web applications
-* NoSQL database that stores schemaless JSON documents
-* Distributed database that is easy to scale
-* High availability database with automatic failover and robust fault tolerance
+<img width="100%" src="./images/rethinkdb-banner.png">
 
 >RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
 
@@ -438,6 +433,15 @@ tableRef.on("delete", function(item) {
 * ["PubSub"-like monitoring on queries for real-time data to the driver](http://rethinkdb.com/docs/changefeeds/javascript/)
 * [Easy to use and parse ReQL query language](http://rethinkdb.com/docs/introduction-to-reql/)
 * Built in Web GUI and interface for data exploration and cluster management
+
+* Open-source 
+* database
+* NoSQL
+* schemaless JSON documents
+* Distributed
+* High availability
+* automatic failover
+* robust fault tolerance
 
 
 ### [Deepstream.io](http://deepstream.io/)
