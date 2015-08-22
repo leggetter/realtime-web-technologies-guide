@@ -423,7 +423,7 @@ tableRef.on("delete", function(item) {
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Services
 
-<img width="100%" src="/images/rethinkdb-banner.png">
+<img width="100%" src="./images/rethinkdb-banner.png">
 
 ### [RethinkDB](http://rethinkdb.com)
 
