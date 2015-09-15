@@ -579,6 +579,15 @@ tableRef.on("delete", function(item) {
 * WebSockets
 * .NET
 
+### [Garufa](https://github.com/Juanmcuello/garufa)
+
+> Garufa is an open source Ruby WebSocket server which implements the Pusher protocol. It is built on top of Goliath, a high performance non-blocking web server, and inspired by Slanger, another server compatible with Pusher. </p>
+
+* Open source
+* Ruby
+* Server
+* WebSockets
+
 ### [Goliath](http://goliath.io)
 
 * Ruby
