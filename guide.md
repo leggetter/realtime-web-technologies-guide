@@ -616,11 +616,11 @@ All JavaScript. No server. No sweat.
 
 <img width="100%" src="./images/rethinkdb-banner.png">
 
-> RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
-
 * [Drivers](https://github.com/rethinkdb/rethinkdb#quickstart)
 * [PubSub / Changfeeds](http://rethinkdb.com/docs/changefeeds/javascript/)
 * [ReQL query language](http://rethinkdb.com/docs/introduction-to-reql/)
+
+> RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
 
 * Open-source 
 * database
