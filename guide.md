@@ -95,7 +95,7 @@
 #### [Pusher](http://pusher.com)
 
 <a href="https://pusher.com">
-  <img src="./images/pusher_logo_dark.png" alt="Pusher Logo" />
+  <img src="./images/pusher-logo-dark.png" alt="Pusher Logo" />
 </a>
 
 * [Docs](http://pusher.com/docs)
