@@ -466,7 +466,7 @@ All JavaScript. No server. No sweat.
 
 ### [Garufa](https://github.com/Juanmcuello/garufa)
 
-> Garufa is an open source Ruby WebSocket server which implements the Pusher protocol. It is built on top of Goliath, a high performance non-blocking web server, and inspired by Slanger, another server compatible with Pusher. </p>
+> Garufa is an open source Ruby WebSocket server which implements the Pusher protocol. It is built on top of Goliath, a high performance non-blocking web server, and inspired by Slanger, another server compatible with Pusher.
 
 * Open source
 * Ruby
@@ -580,14 +580,15 @@ All JavaScript. No server. No sweat.
 * Comet
 * PubSub
 
-### [Plezi](https://github.com/boazsegev/plezi)
+### [Plezi](http://www.plezi.io)
 
 > Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
 * WebSockets
-* Long Pulling (supports RESTful HTTP routes)
+* Long Polling (supports RESTful HTTP routes)
 * HTTP Streaming
 * Ruby
+* Rails/Sinatra/Rack integration
 
 ### [Pokein](http://pokein.com/)
 
