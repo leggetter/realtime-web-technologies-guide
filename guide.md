@@ -4,6 +4,49 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
+#### [Ably](https://www.ably.io)
+<a href="https:www.//ably.io"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
+
+* [Docs](https://www.ably.io/documentation)
+* [Libraries](https://www.ably.io/download)
+* [Pricing](https://www.ably.io/pricing)
+
+> Ably is a platform that makes it easy for you add realtime messaging and streaming data to your application. The global service is uniquely able to offer solutions to the most difficult aspects of messaging at scale such as [limitless scale](https://support.ably.io/solution/articles/3000045691-are-you-able-to-scale-indefinitely-to-meet-demand-#edit), [connection state recovery](https://support.ably.io/solution/articles/3000044639-connection-state-recovery), [guaranteed message delivery](https://support.ably.io/solution/articles/3000044640-message-durability-and-qos-quality-of-service-), client library ["intelligence" to work around transient network problems](https://support.ably.io/solution/articles/3000044636-routing-around-network-and-dns-issues). The Ably service operates in more than [24 data centres globally](https://support.ably.io/solution/articles/3000029525-where-are-ably-s-servers-located-around-the-world) offering the [lowest latencies globally](https://support.ably.io/solution/articles/3000044625-round-trip-latency-and-performance).
+>
+> See the [complete feature set](https://www.ably.io/features) and [how Ably compares to other realtime messaging services](https://www.ably.io/compare).
+
+* [1st class WebSocket support](https://support.ably.io/solution/articles/3000044831-which-transports-are-supported)
+* [Fallback to XHR streaming, polling and JSONP](https://support.ably.io/solution/articles/3000044831-which-transports-are-supported)
+* [Realtime socket client libraries](https://www.ably.io/documentation/realtime)
+* [REST based client libraries](https://www.ably.io/documentation/rest)
+* [Realtime messaging pub/sub](https://www.ably.io/documentation/realtime/channels-messages)
+* [Presence](https://www.ably.io/documentation/realtime/presence) - see who is connected to channels in realtime
+* [24+ data centers & latency based routing](https://support.ably.io/solution/articles/3000029525-where-are-ably-s-servers-located-around-the-world)
+* [Basic and Token based authentication](https://www.ably.io/documentation/general/authentication)
+* [Symmetric encryption](https://www.ably.io/documentation/realtime/encryption)
+* [Connection state recovery](https://support.ably.io/solution/articles/3000044639-connection-state-recovery) - no loss of data following disconnection
+* [Binary encoded data - improved performance](https://support.ably.io/solution/articles/3000047365-do-you-binary-encode-your-messages-for-greater-efficiency-)
+* [Push notifications](https://www.ably.io/documentation/general/push-notifications)
+* [WebHooks](https://www.ably.io/documentation/general/webhooks)
+* [REST API](https://www.ably.io/documentation/rest-api) - for when you just want to communicate with us over HTTP
+
+##### Client libraries
+
+* [Android Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Cordova / PhonegapRealtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Go Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [iOS Objective-C Reatlime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [iOS Swift Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Java Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Javascript (browser) Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Mono Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [.NET Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Node.js Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [PHP REST](https://www.ably.io/download/rest-client-libraries)
+* [Python REST](https://www.ably.io/download/rest-client-libraries)
+* [Ruby Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* [Xamarin Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+
 #### [Fanout](http://fanout.io)
 
 * [Docs](https://fanout.io/docs/)
@@ -622,7 +665,7 @@ All JavaScript. No server. No sweat.
 
 > RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
 
-* Open-source 
+* Open-source
 * database
 * NoSQL
 * schemaless JSON documents
