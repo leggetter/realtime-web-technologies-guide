@@ -11,9 +11,9 @@
 * [Libraries](https://www.ably.io/download)
 * [Pricing](https://www.ably.io/pricing)
 
-> Ably is a platform that makes it easy for you add realtime messaging and streaming data to your application. The global service is uniquely able to offer solutions to the most difficult aspects of messaging at scale such as [limitless scale](https://support.ably.io/solution/articles/3000045691-are-you-able-to-scale-indefinitely-to-meet-demand-#edit), [connection state recovery](https://support.ably.io/solution/articles/3000044639-connection-state-recovery), [guaranteed message delivery](https://support.ably.io/solution/articles/3000044640-message-durability-and-qos-quality-of-service-), client library ["intelligence" to work around transient network problems](https://support.ably.io/solution/articles/3000044636-routing-around-network-and-dns-issues). The Ably service operates in more than [24 data centres globally](https://support.ably.io/solution/articles/3000029525-where-are-ably-s-servers-located-around-the-world) offering the [lowest latencies globally](https://support.ably.io/solution/articles/3000044625-round-trip-latency-and-performance).
+> Ably is a platform that makes it easy for you add realtime messaging and streaming data to your application. The global service is uniquely able to offer solutions to the most difficult aspects of messaging at scale such as limitless scale, connection state recovery, guaranteed message delivery, client library "intelligence" to work around transient network problems. The Ably service operates in more than 24 data centres globally offering the lowest latencies globally.
 >
-> See the [complete feature set](https://www.ably.io/features) and [how Ably compares to other realtime messaging services](https://www.ably.io/compare).
+> See the [complete feature set](https://www.ably.io/features).
 
 * WebSocket
 * HTTP Fallback
