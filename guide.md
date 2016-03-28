@@ -776,6 +776,14 @@ All JavaScript. No server. No sweat.
 
 Represents a core building block of many other realtime web servers.
 
+### [UnderTow](http://undertow.io/)
+
+> An asynchronous WebSocket and HTTP server in Java
+
+* WebSockets
+* Server Sent Events
+* Java
+
 ### [webbit](http://webbitserver.org/)
 
 > An event-based WebSocket and HTTP server in Java
