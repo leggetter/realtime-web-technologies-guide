@@ -5,7 +5,7 @@
 ### General Messaging & PubSub
 
 #### [Ably](https://www.ably.io)
-<a href="https:www.//ably.io"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
+<a href="https://www.ably.io"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
 
 * [Docs](https://www.ably.io/documentation)
 * [Libraries](https://www.ably.io/download)
