@@ -15,37 +15,31 @@
 >
 > See the [complete feature set](https://www.ably.io/features) and [how Ably compares to other realtime messaging services](https://www.ably.io/compare).
 
-* [1st class WebSocket support](https://support.ably.io/solution/articles/3000044831-which-transports-are-supported)
-* [Fallback to XHR streaming, polling and JSONP](https://support.ably.io/solution/articles/3000044831-which-transports-are-supported)
-* [Realtime socket client libraries](https://www.ably.io/documentation/realtime)
-* [REST based client libraries](https://www.ably.io/documentation/rest)
-* [Realtime messaging pub/sub](https://www.ably.io/documentation/realtime/channels-messages)
-* [Presence](https://www.ably.io/documentation/realtime/presence) - see who is connected to channels in realtime
-* [24+ data centers & latency based routing](https://support.ably.io/solution/articles/3000029525-where-are-ably-s-servers-located-around-the-world)
-* [Basic and Token based authentication](https://www.ably.io/documentation/general/authentication)
-* [Symmetric encryption](https://www.ably.io/documentation/realtime/encryption)
-* [Connection state recovery](https://support.ably.io/solution/articles/3000044639-connection-state-recovery) - no loss of data following disconnection
-* [Binary encoded data - improved performance](https://support.ably.io/solution/articles/3000047365-do-you-binary-encode-your-messages-for-greater-efficiency-)
-* [Push notifications](https://www.ably.io/documentation/general/push-notifications)
-* [WebHooks](https://www.ably.io/documentation/general/webhooks)
-* [REST API](https://www.ably.io/documentation/rest-api) - for when you just want to communicate with us over HTTP
-
-##### Client libraries
-
-* [Android Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Cordova / PhonegapRealtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Go Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [iOS Objective-C Reatlime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [iOS Swift Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Java Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Javascript (browser) Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Mono Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [.NET Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Node.js Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [PHP REST](https://www.ably.io/download/rest-client-libraries)
-* [Python REST](https://www.ably.io/download/rest-client-libraries)
-* [Ruby Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
-* [Xamarin Realtime & REST](https://www.ably.io/download/realtime-client-libraries)
+* WebSocket
+* HTTP Fallback
+* XHR streaming
+* HTTP polling 
+* JSONP
+* REST
+* Presence
+* Basic and Token based authentication
+* Symmetric encryption
+* Binary encoded data
+* Push notifications
+* WebHooks
+* Android
+* Cordova
+* Go
+* iOS
+* Java Realtime
+* JavaScript
+* Mono
+* .NET
+* Node.JS
+* PHP
+* Python
+* Ruby
+* Xamarin
 
 #### [Fanout](http://fanout.io)
 
