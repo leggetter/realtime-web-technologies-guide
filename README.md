@@ -1,6 +1,6 @@
 # Realtime Web Technology Guide
 
-The purpose of this repository is to open up the [Realtime Web Technologies Guide](http://www.leggetter.co.uk/real-time-web-technologies-guide) to easier contribution by others. It may eventually supercede that list.
+The purpose of this repository is to open up the [Realtime Web Technologies Guide](https://www.leggetter.co.uk/real-time-web-technologies-guide) to easier contribution by others. It may eventually supercede that list.
 
 ## Conventions
 
