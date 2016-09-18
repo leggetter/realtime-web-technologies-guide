@@ -619,7 +619,7 @@ All JavaScript. No server. No sweat.
 
 ### [Plezi](http://www.plezi.io)
 
-> Plezi is an easy to use Ruby Websocket Framework, with RESTful routing support and an MVC supportive design. It can also be used as milddleware in other Rack frameworks (i.e. Rails / Sinatra apps). It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
+> Plezi is an easy to use Ruby Websocket Framework, with RESTful routing support and an MVC supportive design. It can also be used as middleware in other Rack frameworks (i.e. Rails / Sinatra apps). It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
 * WebSockets
 * HTTP RESTful routes
