@@ -210,6 +210,18 @@
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
 
+#### [Reappt by Push Technology](https://www.reappt.io/)
+
+<a href="https://www.reappt.io/">
+  <img src="./images/reappt.png" alt="Reappt by Push Technology" />
+</a>
+
+* [Docs](http://developer.reappt.io/docs/manual/html/)
+* [Libraries](http://developer.reappt.io/docs/index.html)
+* [Pricing](https://www.reappt.io/pricing)
+
+> Reappt is the only enterprise-class Realtime Messaging service delivered via the cloud to power business-critical internet apps. Reappt helps you develop reactive applications faster with lower costs and reduced risks. It is designed for a broad set of internet, mobile, and IoT developers – and provides a complete set of tools, including APIs and client libraries.
+
 #### [Streamdata.io](http://streamdata.io)
 
 * [Docs](http://streamdata.io/doc/)
