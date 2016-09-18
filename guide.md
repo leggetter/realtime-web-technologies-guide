@@ -644,13 +644,12 @@ All JavaScript. No server. No sweat.
 
 ### [Plezi](http://www.plezi.io)
 
-> Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
+> Plezi is an easy to use Ruby Websocket Framework, with RESTful routing support and an MVC supportive design. It can also be used as middleware in other Rack frameworks (i.e. Rails / Sinatra apps). It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
 * WebSockets
-* Long Polling (supports RESTful HTTP routes)
-* HTTP Streaming
-* Ruby
-* Rails/Sinatra/Rack integration
+* HTTP RESTful routes
+* Stand-Alone / Middleware
+* Ruby with C extension server (uses the fast [iodine server](https://github.com/boazsegev/iodine)) - Optimized for and limited to BSD / Linux and MacOS.
 
 ### [Pokein](http://pokein.com/)
 
