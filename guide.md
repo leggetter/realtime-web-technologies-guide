@@ -267,6 +267,19 @@
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
 
+#### [CloudBoost](https://cloudboost.io/)
+
+* Open Source and hosted
+* Data Storage
+* Search
+* Real-Time
+* Relations
+* Files
+* Geospatial
+* Authentication 
+* Queues
+
+
 #### [Firebase](http://firebase.com)
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
