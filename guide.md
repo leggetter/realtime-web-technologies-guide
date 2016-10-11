@@ -4,6 +4,43 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
+#### [Ably](https://www.ably.io)
+<a href="https://www.ably.io"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
+
+* [Docs](https://www.ably.io/documentation)
+* [Libraries](https://www.ably.io/download)
+* [Pricing](https://www.ably.io/pricing)
+
+> Ably is a platform that makes it easy for you add realtime messaging and streaming data to your application. The global service is uniquely able to offer solutions to the most difficult aspects of messaging at scale such as limitless scale, connection state recovery, guaranteed message delivery, client library "intelligence" to work around transient network problems. The Ably service operates in more than 24 data centres globally offering the lowest latencies globally.
+>
+> See the [complete feature set](https://www.ably.io/features).
+
+* WebSocket
+* HTTP Fallback
+* XHR streaming
+* HTTP polling 
+* JSONP
+* REST
+* Presence
+* Basic and Token based authentication
+* Symmetric encryption
+* Binary encoded data
+* Push notifications
+* WebHooks
+* Android
+* Cordova
+* Go
+* iOS
+* Java Realtime
+* JavaScript
+* Mono
+* .NET
+* Node.JS
+* PHP
+* Python
+* Ruby
+* Xamarin
+
 #### [Fanout](http://fanout.io)
 
 * [Docs](https://fanout.io/docs/)
@@ -173,6 +210,18 @@
 * multiplexing (through the use of channels)
 * HTML5 real-time enabled templating engine (xRTML)
 
+#### [Reappt by Push Technology](https://www.reappt.io/)
+
+<a href="https://www.reappt.io/">
+  <img src="./images/reappt.png" alt="Reappt by Push Technology" />
+</a>
+
+* [Docs](http://developer.reappt.io/docs/manual/html/)
+* [Libraries](http://developer.reappt.io/docs/index.html)
+* [Pricing](https://www.reappt.io/pricing)
+
+> Reappt is the only enterprise-class Realtime Messaging service delivered via the cloud to power business-critical internet apps. Reappt helps you develop reactive applications faster with lower costs and reduced risks. It is designed for a broad set of internet, mobile, and IoT developers – and provides a complete set of tools, including APIs and client libraries.
+
 #### [Streamdata.io](http://streamdata.io)
 
 * [Docs](http://streamdata.io/doc/)
@@ -229,6 +278,19 @@
 
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
+
+#### [CloudBoost](https://cloudboost.io/)
+
+* Open Source and hosted
+* Data Storage
+* Search
+* Real-Time
+* Relations
+* Files
+* Geospatial
+* Authentication 
+* Queues
+
 
 #### [Firebase](http://firebase.com)
 
@@ -582,13 +644,12 @@ All JavaScript. No server. No sweat.
 
 ### [Plezi](http://www.plezi.io)
 
-> Plezi is an easy to use Ruby Websocket Framework, with full RESTful routing support and HTTP streaming support. It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
+> Plezi is an easy to use Ruby Websocket Framework, with RESTful routing support and an MVC supportive design. It can also be used as middleware in other Rack frameworks (i.e. Rails / Sinatra apps). It's name comes from the word "fun" in Haitian, since Plezi is really fun to work with and it keeps our code clean and streamlined.
 
 * WebSockets
-* Long Polling (supports RESTful HTTP routes)
-* HTTP Streaming
-* Ruby
-* Rails/Sinatra/Rack integration
+* HTTP RESTful routes
+* Stand-Alone / Middleware
+* Ruby with C extension server (uses the fast [iodine server](https://github.com/boazsegev/iodine)) - Optimized for and limited to BSD / Linux and MacOS.
 
 ### [Pokein](http://pokein.com/)
 
@@ -622,7 +683,7 @@ All JavaScript. No server. No sweat.
 
 > RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. RethinkDB allows developers to build scalable realtime apps in a fraction of the time with less effort.
 
-* Open-source 
+* Open-source
 * database
 * NoSQL
 * schemaless JSON documents
@@ -738,6 +799,14 @@ All JavaScript. No server. No sweat.
 > Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
 
 Represents a core building block of many other realtime web servers.
+
+### [UnderTow](http://undertow.io/)
+
+> An asynchronous WebSocket and HTTP server in Java
+
+* WebSockets
+* Server Sent Events
+* Java
 
 ### [webbit](http://webbitserver.org/)
 
