@@ -170,6 +170,10 @@
 
 #### [Realtime.co](http://framework.realtime.co)
 
+<a href="https://framework.realtime.co/messaging">
+	<img src="./images/realtime-logo.png" alt="Realtime" />
+</a>
+
 * [Docs](http://messaging-public.realtime.co/documentation/starting-guide/overview.html)
 * [Libraries](http://framework.realtime.co/messaging/#documentation)
 * [Pricing](http://framework.realtime.co/messaging/#pricing)
@@ -181,7 +185,8 @@
 * Real-Time Client Push
 * Real-Time messaging
 * Real-Time data
-* Mobile Push Notifications for iOS and Android (APNS and GCM)
+* Mobile Push Notifications for iOS and Android (APNS and FCM)
+* Webhooks
 * .NET
 * Java / Android
 * JavaScript
@@ -200,7 +205,7 @@
 * React Native
 * Xamarin
 * Unity
-* Cordova/PhoneGap
+* Ionic/Cordova/PhoneGap
 * Go
 * Tessel (IoT)
 * REST API
@@ -208,7 +213,6 @@
 * Presence
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
-* HTML5 real-time enabled templating engine (xRTML)
 
 #### [Reappt by Push Technology](https://www.reappt.io/)
 
