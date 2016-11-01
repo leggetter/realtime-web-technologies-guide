@@ -494,6 +494,25 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * Server
 
+### [Emitter](https://github.com/emitter-io/emitter)
+
+<a href="https://emitter.io">
+  <img src="https://s3.amazonaws.com/cdn.misakai.com/www-emitter/logo/emitter_logo_blue.png" alt="Emitter Logo" />
+</a>
+
+> Emitter is a free open source real-time messaging service that connects all devices. This publish-subscribe messaging API is built for speed and security.
+
+* MQTT Publish/Subscribe API
+* Scalable and Clustered
+* Easy to Use
+* Low Latency, uses LibUV under the hood
+* Scalable Message Filtering
+* Message Storage and Playback
+* Binary Messages
+* Websocket Support
+* Docker Deployment
+* SSL/TLS, Per-Channel Authorization and ACLs
+
 ### [erlang_websocket](https://github.com/MiCHiLU/erlang_websocket)
 
 * Erlang
