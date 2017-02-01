@@ -291,6 +291,21 @@
 * Authentication 
 * Queues
 
+#### [Convergence](https://convergencelabs.com)
+
+<a href="https://convergencelabs.com">
+  <img src="./images/convergence-logo.png" alt="Convergence Logo" />
+</a>
+
+> Convergence is the world's first API specifically designed for realtime collaborative applications.  It was created as a one-stop shop for realtime collaborative application development, with a rich JSON-inspired data model API, guaranteed conflict resolution, and first-class APIs for users, presence, chat, and collaboration awareness.
+
+* Alpha (as of Feb 2017)
+* Hosted
+* Javascript client only (for now)
+* Specifically designed for realtime collaboration
+* Web administration interface
+* Realtime data model editor
+
 
 #### [Firebase](http://firebase.com)
 
