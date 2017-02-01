@@ -182,6 +182,7 @@
 
 * Websockets
 * Fallback-support (streaming and polling)
+* Guaranteed message delivery with "at-least-once" contract
 * Real-Time Client Push
 * Real-Time messaging
 * Real-Time data
