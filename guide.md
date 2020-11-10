@@ -296,20 +296,21 @@
 * Authentication 
 * Queues
 
-#### [Convergence](https://convergencelabs.com)
+#### [Convergence](https://convergence.io)
 
-<a href="https://convergencelabs.com">
+<a href="https://convergence.io">
   <img src="./images/convergence-logo.png" alt="Convergence Logo" />
 </a>
 
 > Convergence is the world's first API specifically designed for realtime collaborative applications.  It was created as a one-stop shop for realtime collaborative application development, with a rich JSON-inspired data model API, guaranteed conflict resolution, and first-class APIs for users, presence, chat, and collaboration awareness.
 
-* Alpha (as of Feb 2017)
 * Hosted
 * Javascript client only (for now)
 * Specifically designed for realtime collaboration
 * Web administration interface
 * Realtime data model editor
+* Conflict resolution
+* Rich text support coming Q2 2018
 
 
 #### [Firebase](http://firebase.com)
@@ -329,6 +330,8 @@
 > Add Realtime collaboration to your app
 Give your users the power of Google Docs–style collaboration.
 All JavaScript. No server. No sweat.
+
+_[Deprecated](https://developers.google.com/google-apps/realtime/deprecation) as of November 28, 2017_
 
 #### [Meteor](http://meteor.com)
 
