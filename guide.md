@@ -4,16 +4,16 @@
 <a name="hosted-client"></a>
 ### General Messaging & PubSub
 
-#### [Ably](https://www.ably.io)
-<a href="https://www.ably.io"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
+#### [Ably](https://ably.com)
+<a href="https://ably.com"><img src="./images/ably-banner.png" alt="Ably.io logo" style="height: 130px"/></a>
 
-* [Docs](https://www.ably.io/documentation)
-* [Libraries](https://www.ably.io/download)
-* [Pricing](https://www.ably.io/pricing)
+* [Docs](https://ably.com/docs)
+* [Libraries](https://ably.com/docs/sdks)
+* [Pricing](https://ably.com/pricing)
 
 > Ably is a platform that makes it easy for you add realtime messaging and streaming data to your application. The global service is uniquely able to offer solutions to the most difficult aspects of messaging at scale such as limitless scale, connection state recovery, guaranteed message delivery, client library "intelligence" to work around transient network problems. The Ably service operates in more than 24 data centres globally offering the lowest latencies globally.
 >
-> See the [complete feature set](https://www.ably.io/features).
+> See the [complete feature set](https://ably.com/platform).
 
 * WebSocket
 * HTTP Fallback
@@ -41,10 +41,7 @@
 * Ruby
 * Xamarin
 
-#### [Fanout](http://fanout.io)
-
-* [Docs](https://fanout.io/docs/)
-* [Pricing](https://fanout.io/pricing/)
+#### [Fanout (now part of Fastly)](https://www.fastly.com/products/real-time)
 
 > Build and scale realtime APIs. Fanout’s push CDN makes it easy. Add live updates to your websites and web services using REST, HTTP streaming, WebSockets, Webhooks, and XMPP
 >
@@ -61,11 +58,7 @@
 * HTTP Long-Polling
 * REST
 
-#### [Hydna](https://www.hydna.com/)
-
-* [Docs](https://www.hydna.com/documentation/)
-* [Libraries](https://www.hydna.com/documentation/#client-libraries)
-* [Pricing](https://www.hydna.com/plans-and-pricing/)
+#### Hydna *(no longer available)*
 
 > A scalable real-time platform
 >
@@ -137,7 +130,7 @@
 
 * [Docs](http://pusher.com/docs)
 * [Libraries](http://pusher.com/docs/libraries)
-* [Pricing](http://pusher.com/pricing)
+* [Pricing](https://pusher.com/channels/pricing)
 
 > Pusher is a hosted API for quickly, easily and securely adding scalable realtime functionality to web and mobile apps.
 
@@ -168,15 +161,10 @@
 * Presence
 * PubSub
 
-#### [Realtime.co](http://framework.realtime.co)
+#### Realtime.co *(no longer available)*
 
-<a href="https://framework.realtime.co/messaging">
-	<img src="./images/realtime-logo.png" alt="Realtime" />
-</a>
+<img src="./images/realtime-logo.png" alt="Realtime" />
 
-* [Docs](http://messaging-public.realtime.co/documentation/starting-guide/overview.html)
-* [Libraries](http://framework.realtime.co/messaging/#documentation)
-* [Pricing](http://framework.realtime.co/messaging/#pricing)
 
 > The Realtime Messaging Framework is a cloud-hosted messaging system for websites and mobile apps that require constant content updates in just a few milliseconds, enabling any application to interact with millions of connected users in a fast and secure way.
 
@@ -215,23 +203,18 @@
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 
-#### [Reappt by Push Technology](https://www.reappt.io/)
+#### [Reappt by Push Technology (now DiffusionData)](https://www.diffusiondata.com/)
 
-<a href="https://www.reappt.io/">
+<a href="https://www.diffusiondata.com/">
   <img src="./images/reappt.png" alt="Reappt by Push Technology" />
 </a>
 
-* [Docs](http://developer.reappt.io/docs/manual/html/)
-* [Libraries](http://developer.reappt.io/docs/index.html)
-* [Pricing](https://www.reappt.io/pricing)
+* [Docs](https://docs.diffusiondata.com/)
 
 > Reappt is the only enterprise-class Realtime Messaging service delivered via the cloud to power business-critical internet apps. Reappt helps you develop reactive applications faster with lower costs and reduced risks. It is designed for a broad set of internet, mobile, and IoT developers – and provides a complete set of tools, including APIs and client libraries.
 
-#### [Streamdata.io](http://streamdata.io)
+#### [Streamdata.io (acquired by Axway)](https://www.axway.com/en)
 
-* [Docs](http://streamdata.io/doc/)
-* [Pricing](http://streamdata.io/pricing/)
-* [Libraries](https://github.com/streamdataio/)
 
 > Streamdata.io is a real-time cache proxy allowing you to poll JSON REST APIs and push updates to clients. But wait, there is more: Streamdata.io keeps a history of modifications that occur on the data between two pollings! This way, streamdata.io is able to give you the list of modifications which happened since last time you fetched the data.
 
@@ -246,11 +229,8 @@
 * Java
 * Android
 
-#### [Tambur.io](https://tambur.io)
+#### Tambur.io *(no longer available)*
 
-* [Docs](https://www.tambur.io/documentation)
-* [Pricing](https://www.tambur.io/pricing)
-* [Libraries](https://github.com/tamburio/)
 
 > Tambur.io provides your business with a simple messaging API to build scalable realtime web and mobile apps.
 
@@ -274,7 +254,7 @@
 * JavaScript
 
 
-#### [WebSync on-demand (by FrozenMountain)](http://www.frozenmountain.com)
+#### WebSync on-demand (by FrozenMountain) *(no longer available)*
 
 * Comet
 * Real-Time Client Push
@@ -284,7 +264,7 @@
 <a name="hosted-data-sync"></a>
 ### Data Synchronisation, Persistence, Full Stack
 
-#### [CloudBoost](https://cloudboost.io/)
+#### [CloudBoost](https://github.com/cloudboost/cloudboost) *(hosted service discontinued; open source on GitHub)*
 
 * Open Source and hosted
 * Data Storage
@@ -296,9 +276,9 @@
 * Authentication 
 * Queues
 
-#### [Convergence](https://convergencelabs.com)
+#### [Convergence](https://github.com/convergencelabs/convergence-server) *(service discontinued; code archived on GitHub)*
 
-<a href="https://convergencelabs.com">
+<a href="https://github.com/convergencelabs/convergence-server">
   <img src="./images/convergence-logo.png" alt="Convergence Logo" />
 </a>
 
@@ -312,7 +292,7 @@
 * Realtime data model editor
 
 
-#### [Firebase](http://firebase.com)
+#### [Firebase](https://firebase.google.com)
 
 > A scalable real-time backend for your web app. Build apps really fast without the hassle of managing servers
 
@@ -324,7 +304,7 @@
 
 **[Acquired by Google](https://www.firebase.com/blog/2014-10-21-firebase-joins-google.html)**. Still active.
 
-#### [Google Drive Realtime API](https://developers.google.com/drive/realtime/)
+#### Google Drive Realtime API *([retired by Google in 2019](https://workspaceupdates.googleblog.com/2017/11/committed-to-storage-apis-retiring.html))*
 
 > Add Realtime collaboration to your app
 Give your users the power of Google Docs–style collaboration.
@@ -342,11 +322,8 @@ All JavaScript. No server. No sweat.
 
 *Not to be confused with the original Meteor Comet server*
 
-#### [Realtime.co Cloud Storage](http://framework.realtime.co/storage)
+#### Realtime.co Cloud Storage *(no longer available)*
 
-* [Docs](http://storage-public.realtime.co/documentation/starting-guide/1.0.0/overview.html)
-* [Libraries](http://framework.realtime.co/storage/#documentation)
-* [Pricing](http://framework.realtime.co/storage/#pricing)
 
 > The Realtime.co Cloud Storage is a highly-scalable backend-as-a-service based on Amazon DynamoDB. Built-in real-time notifications keep data synchronized between users (web and mobile).
 
@@ -377,7 +354,7 @@ All JavaScript. No server. No sweat.
 * RSS
 * PubSubHubbub
 
-#### [DataSift](http://datasift.com)
+#### [DataSift (acquired by Meltwater)](https://www.meltwater.com/)
 
 * Social Media data
 * RSS
@@ -385,7 +362,7 @@ All JavaScript. No server. No sweat.
 
 ### Other
 
-### [Echo](http://aboutecho.com)
+### Echo *(no longer available)*
 
 <a name="self-hosted"></a>
 ## Self Hosted Realtime Solutions
@@ -398,12 +375,12 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * Apache
 
-### [APE Project](http://www.ape-project.org/)
+### [APE Project](https://github.com/APE-Project/APE_Server)
 
 * WebSockets
 * Comet
 
-### [Alchemy Websockets](http://alchemywebsockets.net/)
+### [Alchemy Websockets](https://github.com/Olivine-Labs/Alchemy-Websockets)
 
 > An extremely efficient C# WebSocket server for .NET projects.
 
@@ -427,7 +404,7 @@ All JavaScript. No server. No sweat.
 * Groovy
 * Java
 
-### [Autobahn WebSocket](http://autobahn.ws/)
+### [Autobahn WebSocket](https://github.com/crossbario/autobahn-python)
 
 > Autobahn provides Open-Source client and server implementations of WebSocket and WAMP.
 
@@ -435,7 +412,7 @@ All JavaScript. No server. No sweat.
 * Java
 * Android
 
-### [Beacon Push](http://beaconpush.com)
+### Beacon Push *(no longer available)*
 
 * WebSockets
 * Comet
@@ -449,7 +426,7 @@ All JavaScript. No server. No sweat.
 * node.js
 * REST API
 
-### [BrainSocket](http://brainsocket.brainboxmedia.ca/)
+### BrainSocket *(no longer available)*
 
 > A Laravel package that allows you to get up and running with real-time event-driven PHP apps using WebSockets.
 
@@ -457,7 +434,7 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * PHP
 
-### [Caplin System's Liberator](http://www.freeliberator.com/index.php)
+### [Caplin System's Liberator](https://www.caplin.com/)
 
 * Comet
 * WebSockets
@@ -477,7 +454,7 @@ All JavaScript. No server. No sweat.
 * Event/Message history
 * PubSub
 
-### [cometD](http://cometdproject.dojotoolkit.org/)
+### [cometD](https://cometd.org/)
 
 * Comet
 
@@ -486,7 +463,7 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * Erlang
 
-### [Cramp](http://cramp.in/)
+### Cramp *(no longer available)*
 
 * WebSockets
 * Server Sent Events
@@ -539,7 +516,7 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * Server
 
-### [erlycomet](http://code.google.com/p/erlycomet/)
+### [erlycomet](https://code.google.com/archive/p/erlycomet/)
 
 * Comet
 
@@ -574,14 +551,14 @@ All JavaScript. No server. No sweat.
 * Server
 * WebSockets
 
-### [Goliath](http://goliath.io)
+### [Goliath](https://github.com/postrank-labs/goliath)
 
 * Ruby
 * Asynchronous
 * non-blocking
 * HTTP Streaming
 
-### [ICEfaces](http://www.icefaces.org/main/home/)
+### [ICEfaces](https://icesoft.com/icefaces/)
 
 ### [Java-WebSocket](http://java-websocket.org/)
 
@@ -592,7 +569,7 @@ All JavaScript. No server. No sweat.
 * Server
 * Client
 
-### [Jetty](http://jetty.codehaus.org/jetty/)
+### [Jetty](https://jetty.org/)
 
 * WebSockets
 * HTTP Streaming
@@ -604,7 +581,7 @@ All JavaScript. No server. No sweat.
 * Fallback-support
 * node.js
 
-### [jwebsocket](http://code.google.com/p/jwebsocket/)
+### [jwebsocket](https://code.google.com/archive/p/jwebsocket/)
 
 * Java
 * WebSockets
@@ -614,7 +591,7 @@ All JavaScript. No server. No sweat.
 * WebSockets
 * Fallback-support
 
-### [libwebsockets](http://git.warmcat.com/cgi-bin/cgit/libwebsockets/)
+### [libwebsockets](https://libwebsockets.org/)
 
 > C Websockets Server Library
 
@@ -627,12 +604,12 @@ All JavaScript. No server. No sweat.
 * Comet
 * WebSockets
 
-### [Meteor](http://meteorserver.org/)
+### Meteor Comet server *(no longer available)*
 
 * Comet
 * Perl
 
-### [Migratory](http://migratory.ro/)
+### [Migratory (now MigratoryData)](https://www.migratorydata.com/)
 
 * Comet
 * WebSockets
@@ -656,7 +633,7 @@ All JavaScript. No server. No sweat.
 
 *Doesn't appear to be actively maintained any more and the website is down.*
 
-### [Nugget](http://nugget.codeplex.com/)
+### Nugget *(no longer available)*
 
 > A web socket server implemented in c#.
 >
@@ -665,18 +642,18 @@ All JavaScript. No server. No sweat.
 * C#
 * .NET
 
-### [phpDaemon](http://daemon.io/)
+### [phpDaemon](https://github.com/kakserpom/phpdaemon)
 
 > Asynchronous server-side framework for Web and network applications implemented in PHP using libevent. phpDaemon can handle thousands of simultaneous connections
 
 * PHP
 
-### [PHP WebSocket](http://code.google.com/p/phpwebsocket/)
+### [PHP WebSocket](https://code.google.com/archive/p/phpwebsocket/)
 
 * PHP
 * WebSockets
 
-### [Persevere](http://www.persvr.org/)
+### Persevere *(no longer available)*
 
 * Comet
 * PubSub
@@ -690,7 +667,7 @@ All JavaScript. No server. No sweat.
 * Stand-Alone / Middleware
 * Ruby with C extension server (uses the fast [iodine server](https://github.com/boazsegev/iodine)) - Optimized for and limited to BSD / Linux and MacOS.
 
-### [Pokein](http://pokein.com/)
+### Pokein *(no longer available)*
 
 * Comet
 * ASP.NET
@@ -788,7 +765,7 @@ All JavaScript. No server. No sweat.
 
 * Node.js
 
-### [SocketTornad.IO](https://github.com/SocketTornadIO/SocketTornad.IO)
+### SocketTornad.IO *(no longer available)*
 
 > Implementation of the Socket.IO Websocket emulation protocol in Python on top of the non-blocking Tornado Web Framework.
 
@@ -797,7 +774,7 @@ All JavaScript. No server. No sweat.
 * Server
 * Client
 
-### [Spike-Engine](http://www.spike-engine.com)
+### Spike-Engine *(no longer available)*
 
 > Spike-Engine allows quick and painless creation of real-time web services in .NET. Spike-Engine focuses on latency, bandwith and perfomance and has been designed and proven to be robust and reliable. The technology has been tested in production environment with thousands of simultaneous connections and used to build reliable game and application servers.
 
@@ -819,9 +796,9 @@ All JavaScript. No server. No sweat.
 * Cross-Platform
 * Monitoring
 
-### [StreamHub](http://www.stream-hub.com/)
+### StreamHub *(no longer available)*
 
-### [SuperWebSocket, a .NET WebSocket server](http://superwebsocket.codeplex.com/)
+### [SuperWebSocket, a .NET WebSocket server](https://github.com/kerryjiang/SuperWebSocket)
 
 * WebSockets,
 * .NET
@@ -866,13 +843,13 @@ Represents a core building block of many other realtime web servers.
 * Server
 * Client
 
-### [XSockets](http://xsockets.net/)
+### XSockets *(no longer available)*
 
 * WebSockets
 * .NET
 * Fallback-support
 
-### [YAWS (Yet Another Web Server)](http://yaws.hyber.org/)
+### [YAWS (Yet Another Web Server)](https://github.com/erlyaws/yaws)
 
 * WebSockets
 * HTTP Long-Polling
@@ -891,19 +868,17 @@ Represents a core building block of many other realtime web servers.
 * [AS3 WebSocket](https://github.com/Worlize/AS3WebSocket)
 
 ### .NET
-* [Microsoft .NET 4.5 namespace and classes](http://msdn.microsoft.com/en-us/library/hh159285.aspx)
-* [Anaida - WebSocket Client/Adapter](http://anaida.codeplex.com/)
-* [Microsoft Windows Store app MessageWebSocket class](http://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.sockets.messagewebsocket.aspx)
+* [Microsoft .NET WebSockets namespace and classes](https://learn.microsoft.com/en-us/dotnet/api/system.net.websockets)
+* [Microsoft Windows app MessageWebSocket class](https://learn.microsoft.com/en-us/uwp/api/windows.networking.sockets.messagewebsocket)
 * [WebSocket Sharp](https://github.com/sta/websocket-sharp)
-* [WebSocket4Net](http://websocket4net.codeplex.com/) - originated from the SuperWebSocket codebase
+* [WebSocket4Net](https://github.com/kerryjiang/WebSocket4Net) - originated from the SuperWebSocket codebase
 
 ### Silverlight
-[Silverlight WebSocket client](http://html5labs.interoperabilitybridges.com/prototypes/websockets/websockets/info) - prototype
 
 ### Java
 
-* [Java WebSocket Client](http://code.google.com/p/weberknecht/)
-* [UnittWebSocket](http://code.google.com/p/unitt/wiki/UnittWebSocket)
+* [Java WebSocket Client (weberknecht)](https://code.google.com/archive/p/weberknecht/)
+* [UnittWebSocket](https://code.google.com/archive/p/unitt/)
 * [Java-WebSocket](http://java-websocket.org/)
 
 ### C++
@@ -916,7 +891,7 @@ Represents a core building block of many other realtime web servers.
 ### Python
 
 * [ws4py](https://github.com/Lawouach/WebSocket-for-Python/tree/master/ws4py/client)
-* [websocket-client](http://pypi.python.org/pypi/websocket-client/)
+* [websocket-client](https://pypi.org/project/websocket-client/)
 
 ### Objective-C
 
