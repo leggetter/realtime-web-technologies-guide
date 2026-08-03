@@ -203,15 +203,12 @@
 * built-in security (authentication and authorization)
 * multiplexing (through the use of channels)
 
-#### [Reappt by Push Technology (now DiffusionData)](https://www.diffusiondata.com/)
-
-<a href="https://www.diffusiondata.com/">
-  <img src="./images/reappt.png" alt="Reappt by Push Technology" />
-</a>
+#### [Diffusion by DiffusionData](https://www.diffusiondata.com/)
 
 * [Docs](https://docs.diffusiondata.com/)
+* [Pricing](https://www.diffusiondata.com/pricing/)
 
-> Reappt is the only enterprise-class Realtime Messaging service delivered via the cloud to power business-critical internet apps. Reappt helps you develop reactive applications faster with lower costs and reduced risks. It is designed for a broad set of internet, mobile, and IoT developers – and provides a complete set of tools, including APIs and client libraries.
+> Diffusion (formerly Reappt, from Push Technology — now DiffusionData) is a real-time data platform that handles low-latency streaming and secure distribution of data at scale. Available as a fully managed cloud service, on-premise, or hybrid, with delta streaming to reduce bandwidth and SDKs for JavaScript, Java, .NET, Python, iOS, Android, and C.
 
 #### [Streamdata.io (acquired by Axway)](https://www.axway.com/en)
 
